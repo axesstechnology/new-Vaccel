@@ -44,7 +44,7 @@ export default function Links() {
 
   return (
     <div className={`${scrollClass} links-container row align-items-center text-white ${hover}`}>
-      <div className="col-3">
+      <div className="col-2">
         <a href='https://wa.me/6379532366' className="d-flex justify-content-center text-decoration-none text-white"
           onMouseEnter={() => setcolorfunctoin('whatsappcolor')}
           onMouseLeave={() => setHover('')}>

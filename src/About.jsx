@@ -8,20 +8,32 @@ import whyus2 from '../src/assets/images/about/whyus2.png'
 // import rightway from '../src/assets/images/about/rightway.jpg'
 import Footer from "./components/Footer";
 import { Link } from "react-router-dom";
-import md from "../src/assets/images/md/md.png"
+import md from "../src/assets/images/md/venkatesan-ceo.jpg";
+import yourNewImage from '../src/assets/images/for-about.png'
 
 function About() {
   return (
     <div>
       <Navbar />
-      <Banner
+      {/* <Banner
         h1={"About Us"}
         h2={"Axess Technology: Weaving Digital Successes for 8 Years"}
-      />
+      /> */}
 
+<div className='hero-banner hero-2 mt-5' data-aos='fade'>
+                 <div className='container text-center green-text'>
+                     <p className="bg-img-2 mb-5 mx-auto" data-aos='fade-up' data-aos-duration='400'>About Us</p>
+                     <h1 className={`secondary-header mb-3`} data-aos='fade-up' data-aos-duration='600'>Axess Technology: Weaving Digital Successes for 8 Years</h1>
+                     {/* <p className='mb-0 secondary-text mb-3' data-aos='fade-up' data-aos-duration='700'>{h3}</p> */}
+                         <Link to={"/contact"} className='text-decoration-none'>
+                             <button className='gold-btn green-btn m-5 mx-auto' data-aos='zoom-out' data-aos-duration='600'>
+                                 <span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i>
+                             </button>
+                         </Link>
+                 </div>
+             </div>
 
-
-      <div className="">
+      {/* <div className="">
         <div className="row">
           <div className="col-md-5 bg-axess-gold-2 d-none d-md-block"  data-aos="fade-right" data-aos-duration="600">
             <div className="container">
@@ -37,7 +49,40 @@ function About() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+<div className="">
+  <div className="row bg-green-1" style={{ minHeight: '400px' }}>
+    
+    {/* Left side - Heading */}
+    <div className="col-md-6 d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-right" data-aos-duration="600">
+  <h1 className="fw-bold mb-3 text-white" style={{ fontSize: '80px' }}>Why V-Accel?</h1>
+  
+  <div style={{ maxWidth: '500px' }}>
+    <p style={{ color: 'white', fontSize: '30px', marginBottom: '5px' }}>
+      From Concept to Reality —
+    </p>
+    <p style={{ color: 'white', fontSize: '23px' }}>
+      Empowering Ideas with AI & Accelerating Success
+    </p>
+  </div>
+</div>
+
+
+
+    {/* Right side - Image */}
+    <div className="col-md-6 d-flex align-items-center justify-content-center" data-aos="fade-left" data-aos-duration="600">
+      <img 
+        src={yourNewImage} 
+        alt="centeredImage" 
+        style={{ width: '300px', height: '400px', objectFit: 'cover' }} 
+      />
+    </div>
+
+  </div>
+</div>
+
+
 
       <div className="container">
         <div className=" pt-3 row justify-content-end">
@@ -54,8 +99,8 @@ function About() {
                 />
               </div>
               <p className="mt-3 ceo-content">
-                Founded by a passionate entrepreneur, Mr. Venkteshan, Axess
-                Technology has been igniting digital dreams for the past eight
+                Founded by a passionate entrepreneur, Mr. Venkteshan, V-Accel 
+                AI Dynamics has been igniting digital dreams for the past eight
                 years. We're not just tech wizards; we're your collaborators,
                 crafting custom solutions that propel your brand forward. From
                 the pixel-perfect world of website development to the rigorous
@@ -143,7 +188,7 @@ function About() {
         <div>
           <h5 className="secondary-header text-center py-5" data-aos="fade-up" data-aos-duration="1000">
             Let's talk about your digital aspirations. Whether you're a budding
-            startup or a seasoned enterprise, Axess has the tools and vision to
+            startup or a seasoned enterprise, V-Accel has the tools and vision to
             help you soar.
           </h5>
         </div>
@@ -191,7 +236,7 @@ function About() {
           <h3 className="secondary-header mx-auto text-center text-white mb-2">
             <q>
               Eight years of experience, countless success stories, and a
-              burning passion for digital excellence - that's Axess Technology.
+              burning passion for digital excellence - that's V-Accel.
             </q>
           </h3>
           <p className="col-md-8 fs-5 mx-auto text-center text-white mt-4">
@@ -201,7 +246,7 @@ function About() {
         </div>
 
         <div className="row  py-3" data-aos="fade-up" data-aos-duration="600">
-          <div className="col-md-6 pt-2 d-flex justify-content-center ">
+          {/* <div className="col-md-6 pt-2 d-flex justify-content-center ">
             <div className="text-center">
               <p className="secondary-text text-white"> Follow us on social media for digital insights and inspiration.</p>
               <div className=" d-flex justify-content-center align-items-center">
@@ -216,7 +261,7 @@ function About() {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="col-md-6 py-2 text-center">
             <p className="secondary-text text-white">
               Schedule a free consultation to discuss your unique needs.{" "}
