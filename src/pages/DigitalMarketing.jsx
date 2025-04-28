@@ -135,7 +135,7 @@ export default function DigitalMarketing() {
                   </p>
                   <p className="secondary-text mx-auto text-center m-5">
                     In today's digital age, a captivating online presence is no
-                    longer a luxury, it's a necessity. At Axess Technology, we
+                    longer a luxury, it's a necessity. At V-Accel, we
                     believe in the power of digital marketing to fuel brand
                     awareness, ignite engagement, and propel conversions. Our
                     team of expert strategists, content creators, and
@@ -213,7 +213,7 @@ export default function DigitalMarketing() {
           </h3>
           <p className="col-md-8 primary-text mx-auto text-center text-white mb-4">
             Ready to ignite your digital presence and watch your brand reach new
-            heights? Let Axess Technology be your guide. Contact us today for a
+            heights? Let V-Accel be your guide. Contact us today for a
             free consultation and let's start mapping out your digital dominance
             strategy!{" "}
           </p>

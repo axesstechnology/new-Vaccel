@@ -65,7 +65,7 @@ export default function Links() {
               <i className="bi bi-facebook"></i>
             </div>
           </div>
-          <p className='mb-0 ms-5 d-none d-lg-block px-2'>axess technology</p>
+          <p className='mb-0 ms-5 d-none d-lg-block px-2'>V-Accel</p>
         </a>
       </div>
       <div className="col-3">

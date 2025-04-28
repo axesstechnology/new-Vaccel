@@ -15,12 +15,12 @@ function Policy() {
         />
 <div className=" bg-green-1 ">
         <div className="container mt-5">
-          <p className="secondary-header text-light pt-4">Welcome to Axess Technology.</p>
+          <p className="secondary-header text-light pt-4">Welcome to  V-Accel.</p>
           <div className="row justify-content-center bg-green-1 text-light">
             <div className="col-md-10">
               <h4 className="gold-text-2 mt-3">1. Introduction</h4>
               <p className="secondary-text">
-                Axess Technology (“us”, “we”, or “our”) operates at
+                V-Accel (“us”, “we”, or “our”) operates at
                 https://axesstechnology.in/(hereinafter referred to as
                 “Service”). Our Privacy Policy governs your visit to
                 https://axesstechnology.in/ and explains how we collect,
@@ -36,8 +36,8 @@ function Policy() {
               </p>
               <h4 className="gold-text-2">2. Definitions</h4>
               <p className="secondary-text">
-                SERVICE means the https://axesstechnology.in/ website operated
-                by Axess Technology. PERSONAL DATA means data about a living
+                SERVICE means the https://v-accel.ai/ website operated
+                by  V-Accel. PERSONAL DATA means data about a living
                 individual who can be identified from those data (or from those
                 and other information either in our possession or likely to come
                 into our possession). USAGE DATA is data collected automatically
@@ -122,7 +122,7 @@ function Policy() {
               </p>
               <h4 className="gold-text-2">5. Use of Data</h4>
               <p className="secondary-text">
-                Axess Technology uses the collected data for various purposes:
+                V-Accel uses the collected data for various purposes:
                 0.1. to provide and maintain our Service; 0.2. to notify you
                 about changes to our Service; 0.3. to allow you to participate
                 in interactive features of our Service when you choose to do so;
@@ -169,7 +169,7 @@ function Policy() {
                 Data, to No. 265, 2nd Floor, GST Road, Chromepet, Chennai –
                 600044 and process it there. Your consent to this Privacy Policy
                 followed by your submission of such information represents your
-                agreement to that transfer. Axess Technology will take all the
+                agreement to that transfer.  V-Accel will take all the
                 steps reasonably necessary to ensure that your data is treated
                 securely and in accordance with this Privacy Policy and no
                 transfer of your Personal Data will take place to an

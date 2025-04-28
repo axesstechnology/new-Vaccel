@@ -74,7 +74,7 @@ function Navbar() {
     <p className="mb-0" style={{ fontSize: '48px', fontWeight: '700', whiteSpace: 'nowrap', letterSpacing: '4px',color:'#1f4051' }}>
       V
       <span 
-      style={{ fontFamily: 'Arial, sans-serif', fontWeight: '900', margin: '0 10px' }}
+      style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500', margin: '0 10px' }}
     >
       -
     </span>
@@ -93,11 +93,11 @@ function Navbar() {
 
 
 
-        <div className='order-3 order-lg-3'>
-          <NavLink to={'/login'} className='gold-btn px-4'>
+        {/* <div className='order-3 order-lg-3'> */}
+          {/* <NavLink to={'/login'} className='gold-btn px-4'>
             <span className='d-block green-text-1'>Login</span>
-          </NavLink>
-        </div>
+          </NavLink> */}
+        {/* </div> */}
       </div>
 
       {/* Main Navigation */}
@@ -108,7 +108,7 @@ function Navbar() {
               <Link to='/' className="navbar-brand col-1">
                 <img src={logo} alt="" />
               </Link>
-              <p className="secondary-text m-0 text-center" onClick={()=>navigation("/")}>Axess Technology</p>
+              <p className="secondary-text m-0 text-center" onClick={()=>navigation("/")}>V-Accel</p>
               <button
                 className={`navbar-toggler shadow-none border-0 hamburger hamburger--spring-r ${nav && 'is-active'}`}
                 type="button"

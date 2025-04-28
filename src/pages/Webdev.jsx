@@ -145,7 +145,7 @@ function Development() {
                 In today's digital world, your website is the first impression
                 you make on potential customers. It's your virtual storefront,
                 your digital ambassador, and the key to unlocking online
-                success. At Axess Technology, we don't just build websites; we
+                success. At  V-Accel, we don't just build websites; we
                 craft online experiences that captivate visitors, fuel
                 engagement, and seamlessly convert them into loyal customers.
               </p>
@@ -326,7 +326,7 @@ function Development() {
                       data-aos-easing="ease-in-back"
                     >
                       <p className="primary-text">
-                        Ready to create a website that works as hard as you do? Let Axess Technology be your web development partner.
+                        Ready to create a website that works as hard as you do? Let  V-Accel be your web development partner.
 
                       </p>
                     </li>

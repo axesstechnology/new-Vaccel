@@ -286,7 +286,7 @@ function Footer({ displayContact }) {
                 <div className="container">
                     <div className="row text-center text-capitalize mt-0 py-md-5 my-md-5 g-4 g-md-0">
                         <div className="col-5 col-md-6" data-aos='fade-up' data-aos-duration='700'>
-                            <p className='gold-text-2 fw-bolder'>Why Axess?</p>
+                            <p className='gold-text-2 fw-bolder'>V-Accel</p>    
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled'>
                                     {/* <button onClick={handleRoute}>home</button> */}

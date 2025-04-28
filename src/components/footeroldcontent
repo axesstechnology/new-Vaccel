@@ -164,7 +164,7 @@ function Footer() {
                 </div>
                 <hr />
                 <div className='text-center'>
-                    <p className='mb-0 primary-text text-decoration-none text-white'>Copyright © All rights reserved 2024. Axess Technology.</p>
+                    <p className='mb-0 primary-text text-decoration-none text-white'>Copyright © All rights reserved 2025.V-Accel.</p>
                 </div>
             </div>
         </div>

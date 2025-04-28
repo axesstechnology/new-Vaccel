@@ -287,7 +287,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" >
-                                    Q1: What are Axess Technology's core services?
+                                    Q1: What are V-Accel's core services?
 
                                 </button>
 
@@ -302,7 +302,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                    Q2: What sets Axess Technology apart from other digital agencies?
+                                    Q2: What sets  V-Accel apart from other digital agencies?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseTwo" className="accordion-collapse collapse">
