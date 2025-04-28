@@ -204,7 +204,7 @@ function Footer({ displayContact }) {
                             <div className="row">
                                 <div className="col-md-10">
                                     <p className='text-start mx-2 fs-5 bg-img-1' data-aos='zoom-out'>Contact us</p>
-                                    <p data-aos='zoom-out'>We’re excited to hear about your project. Schedule a call today and Connect with our experts. At Axess, We respect your privacy and Never share your details with anyone. Let's build together.</p>
+                                    <p data-aos='zoom-out'>We’re excited to hear about your project. Schedule a call today and Connect with our experts. At V-Accel, We respect your privacy and Never share your details with anyone. Let's build together.</p>
                                 </div>
                                 <div className="col-md-2 position-absolute footerbg">
                                     <img src={frompng} alt="" />
@@ -238,17 +238,17 @@ function Footer({ displayContact }) {
 
                                 <div className="row">
 
-                                    <div className="col-md-4" data-aos='zoom-out'>
+                                    {/* <div className="col-md-4" data-aos='zoom-out'>
                                         <p>WhatsApp: <Link to={"+91 6379532366"} className='text-decoration-none concolor'> +91 63795 32366 </Link></p>
                                         <p>Instagram: <a className='text-decoration-none concolor' href="https://www.instagram.com/axesstech/" target='_blank'>axesstech</a></p>
-                                    </div>
+                                    </div> */}
 
                                     <div className="col-md-4" data-aos='zoom-out'>
                                         {/* <p>Phone:<Link to={"+91 90425 77261"} className='text-decoration-none concolor'> +91 90425 77261</Link></p> */}
                                         {/* <p>Phone: <span className='text-decoration-none concolor' onClick={() => handlePhoneCall('+919042577261')}> +91 9042577261</span></p> */}
-                                        <div className='d-none d-lg-block'>Phone: <span className='concolor text-decoration-none'>+91 6380665710</span></div>
-                                        <div className='d-lg-none'>Phone:<Link to="tel:7845721438" className='concolor text-decoration-none'> +91 90425 77261</Link></div>
-                                        <p className='mt-3'>Email : <a className='text-decoration-none concolor' href="mailto: info@axesstechnology.in">info@axesstechnology.in</a></p>
+                                        <div className='d-none d-lg-block'>Phone: <span className='concolor text-decoration-none'>+91 7603846245</span></div>
+                                        {/* <div className='d-lg-none'>Phone:<Link to="tel:7845721438" className='concolor text-decoration-none'> +91 90425 77261</Link></div> */}
+                                        <p className='mt-3'>Email : <a className='text-decoration-none concolor' href="mailto: info@v-accel.ai">info@v-accel.ai</a></p>
                                     </div>
 
                                     <div className="col-md-4" data-aos='zoom-out'>
@@ -285,7 +285,7 @@ function Footer({ displayContact }) {
                 </div>
                 <div className="container">
                     <div className="row text-center text-capitalize mt-0 py-md-5 my-md-5 g-4 g-md-0">
-                        <div className="col-5 col-md-4" data-aos='fade-up' data-aos-duration='700'>
+                        <div className="col-5 col-md-6" data-aos='fade-up' data-aos-duration='700'>
                             <p className='gold-text-2 fw-bolder'>Why Axess?</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled'>
@@ -298,7 +298,7 @@ function Footer({ displayContact }) {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-7 col-md-4" data-aos='fade-up' data-aos-duration='700'>
+                        <div className="col-7 col-md-6" data-aos='fade-up' data-aos-duration='700'>
                             <p className='gold-text-2 fw-bolder'>Our Services</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled'>
@@ -311,7 +311,7 @@ function Footer({ displayContact }) {
                             </div>
                         </div>
 
-                        <div className="col-md-4" data-aos='fade-up' data-aos-duration='700'>
+                        {/* <div className="col-md-4" data-aos='fade-up' data-aos-duration='700'>
                             <div>
                                 <p className='gold-text-2 fw-bolder text-center mb-3'>Social media</p>
                                 <p className='text-center primary-text mb-3'>Follow Us on Social Media.</p>
@@ -322,7 +322,7 @@ function Footer({ displayContact }) {
                                     <li className='zoom-effect'><Link to={'https://www.linkedin.com/company/axess-technology-official'} target='_blank' className='text-decoration-none'><i className="bi bi-linkedin bg-img-1"></i></Link></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 {/* <div className="container">
@@ -340,7 +340,7 @@ function Footer({ displayContact }) {
                 <hr className='m-0' />
                 <div className='text-center'>
                     <p className='mb-0 py-3 primary-text text-decoration-none text-white last-child'>
-                        Copyright © All rights reserved 2024.<span className='d-block d-md-inline'>Axess Technology.</span> <Link className='footerhover text-decoration-none' to={"/privacypolicy"}> Privacy Policy </Link></p>
+                        Copyright © All rights reserved 2025.<span className='d-block d-md-inline'>V - Accel</span> <Link className='footerhover text-decoration-none' to={"/privacypolicy"}> Privacy Policy </Link></p>
                 </div>
             </div>
 

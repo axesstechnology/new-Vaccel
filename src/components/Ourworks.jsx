@@ -29,10 +29,13 @@ export default function CategoriesIn() {
   return (
     <div>
       <Navbar />
-      <Banner
+      {/* <Banner
         h1="Categories"
         h2="Get started with 900+ free, customizable templates, a smart drag and drop editor, tools to boost your online presence and more."
         h3="Collaborate with us"
+      /> */}
+      <Banner
+       
       />
       <div className="cat">
         <div className="" id="resume">
@@ -173,10 +176,10 @@ export default function CategoriesIn() {
                     </div>
                     <div className="col-md-6 mt-3">
                       <div className="py-3">
-                        <h3>E-Commerce</h3>
+                        {/* <h3>E-Commerce</h3> */}
                         <div className="py-3">
                           <p className="fw-bold text-warning">
-                            Id.No : AT-EC-01
+                            {/* Id.No : AT-EC-01 */}
                           </p>
                         </div>
                         <div className="pt-2">

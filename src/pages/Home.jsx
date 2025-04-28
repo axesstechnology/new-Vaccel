@@ -36,7 +36,8 @@ export default function Home() {
                                 <img src={pulse} className='pulse' alt="pulse" />
                                 <Svg1/>
                                 <div className="hero-banner-content">
-                                    <h1 className='mb-5' data-aos='fade-up' data-aos-duration='500'>Forget fragmented services. Axess builds your digital ecosystem - seamless, powerful, designed to win.</h1>
+                                    {/* <h1 className='mb-5' data-aos='fade-up' data-aos-duration='500'>Forget fragmented services. Axess builds your digital ecosystem - seamless, powerful, designed to win.</h1> */}
+                                    <h1 className='mb-5' data-aos='fade-up' data-aos-duration='500'>Chennai's Leading AI Machine Learning Company.</h1>
                                     <p className='primary-text mb-5' data-aos='fade-up' data-aos-duration='600'>Software crafted to empower. Websites that captivate and convert. Marketing that ignites engagement. Testing that ensures flawless experiences.</p>
                                     {/* <button className='gold-btn mb-5 mb-lg-0 mx-auto mx-lg-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button> */}
                                     <Link to={"/contact"} className='text-decoration-none'> <button className='gold-btn mb-5 mb-lg-0 mx-auto mx-lg-0' data-aos='zoom-out' data-aos-duration='600'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button></Link>

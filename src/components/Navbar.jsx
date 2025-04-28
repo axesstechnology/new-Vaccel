@@ -4,6 +4,7 @@ import Home from '../pages/Home';
 import logo from '../assets/images/logo/logo.png';
 import '../assets/css/hamburgers/hamburgers.scss';
 import { userContext } from '../store/Store';
+import vlogo from '../assets/images/V Logo.png';
 
 function Navbar() {
   const [fixed, setFixed] = useState(false);
@@ -54,16 +55,44 @@ function Navbar() {
     <div>
       {/* Upper Navigation */}
       <div className='d-flex py-3 py-lg-0 justify-content-between bg-white justify-content-lg-around align-items-center upper-nav border-bottom container-fluid flex-wrap' data-aos='fade-down' data-aos-duration='500'>
-        <div className='d-flex share order-2 order-lg-1 '>
+        {/* <div className='d-flex share order-2 order-lg-1 '>
           <Link to={'https://www.facebook.com/profile.php?id=61556380648787'} target='_blank'><i className="bi bi-facebook text-primary fs-6"></i></Link>
           <Link to={'https://www.instagram.com/axesstech/'} target='_blank'><i className="bi bi-instagram text-danger fs-6"></i></Link>
           <Link><i className="bi bi-whatsapp text-success fs-6"></i></Link>
-        </div>
-        <NavLink to='/' className='d-none d-lg-flex justify-content-center col-12 col-lg-4  order-1 order-lg-2'>
+        </div> */}
+         {/* <NavLink to='/' className='d-none d-lg-flex justify-content-center col-12 col-lg-4  order-1 order-lg-2'>
           <p> Axess</p>
-          <img src={logo} alt="" />
+         <img style={{ width: '50px',height: '110px' }} src={vlogo} alt="" /> 
           <p>Technology</p>
-        </NavLink>
+        </NavLink>  */}
+        
+        <NavLink 
+  to='/' 
+  className='d-none d-lg-flex align-items-center justify-content-center col-12 col-lg-4 order-1 order-lg-2'
+>
+  <div className="d-flex align-items-center" style={{ gap: '20px' }}>
+    <p className="mb-0" style={{ fontSize: '48px', fontWeight: '700', whiteSpace: 'nowrap', letterSpacing: '4px',color:'#1f4051' }}>
+      V
+      <span 
+      style={{ fontFamily: 'Arial, sans-serif', fontWeight: '900', margin: '0 10px' }}
+    >
+      -
+    </span>
+    Accel
+    </p>
+    <img 
+      src={vlogo} 
+      alt="Logo" 
+      style={{ width: '60px', height: '100px', objectFit: 'contain' }} 
+    />
+    <p className="mb-0" style={{ fontSize: '48px', fontWeight: '700', whiteSpace: 'nowrap', letterSpacing: '4px',color:'#1f4051' }}>
+      AI Dynamics
+    </p>
+  </div>
+</NavLink>
+
+
+
         <div className='order-3 order-lg-3'>
           <NavLink to={'/login'} className='gold-btn px-4'>
             <span className='d-block green-text-1'>Login</span>

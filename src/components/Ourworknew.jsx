@@ -99,12 +99,12 @@ export default function Ourworknew() {
                                         </div>
                                         <div className="col-md-5 mt-3">
                                             <div className="py-3">
-                                                <h3>{value.Category}</h3>
-                                                <div className="py-3">
+                                                {/* <h3>{value.Category}</h3> */}
+                                                {/* <div className="py-3">
                                                     <p className="secondary-text">
                                                         Site ID: {value.siteId}
                                                     </p>
-                                                </div>
+                                                </div> */}
                                                 <div className="pt-2">
                                                     <h3>{value.SiteName}</h3>
                                                     <p className="pt-2">
@@ -114,15 +114,15 @@ export default function Ourworknew() {
                                             </div>
                                             <div className="d-flex justify-content-evenly">
                                                 <div className="pt-2 demo-bts">
-                                                    <Link to={value.WebsiteLink} className="text-decoration-none" target="_blank">
+                                                    {/* <Link to={value.WebsiteLink} className="text-decoration-none" target="_blank">
                                                         <button className="gold-btn m-0 green-btn">
                                                             <span className="d-block">Demo Live</span>{" "}
                                                             <i className="bi bi-arrow-right"></i>
                                                         </button>
-                                                    </Link>
+                                                    </Link> */}
                                                 </div>
                                                 <div className="pt-2">
-                                                    <Link
+                                                    {/* <Link
                                                         to={"/contact"}
                                                         className="text-decoration-none"
                                                     >
@@ -130,10 +130,10 @@ export default function Ourworknew() {
                                                             <span className="d-block">Pricing</span>{" "}
                                                             <i className="bi bi-arrow-right"></i>
                                                         </button>
-                                                    </Link>
+                                                    </Link> */}
                                                 </div>
                                                 <div className="pt-2">
-                                                    <Link
+                                                    {/* <Link
                                                         to={"/contact"}
                                                         className="text-decoration-none"
                                                     >
@@ -141,7 +141,7 @@ export default function Ourworknew() {
                                                             <span className="d-block">Order Now</span>{" "}
                                                             <i className="bi bi-arrow-right"></i>
                                                         </button>
-                                                    </Link>
+                                                    </Link> */}
                                                 </div>
                                             </div>
                                         </div>
