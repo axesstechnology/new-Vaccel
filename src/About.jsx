@@ -23,7 +23,7 @@ function About() {
 <div className='hero-banner hero-2 mt-5' data-aos='fade'>
                  <div className='container text-center green-text'>
                      <p className="bg-img-2 mb-5 mx-auto" data-aos='fade-up' data-aos-duration='400'>About Us</p>
-                     <h1 className={`secondary-header mb-3`} data-aos='fade-up' data-aos-duration='600'>Axess Technology: Weaving Digital Successes for 8 Years</h1>
+                     <h1 className={`secondary-header mb-3`} data-aos='fade-up' data-aos-duration='600'>V-Accel : Weaving Digital Successes for 8 Years</h1>
                      {/* <p className='mb-0 secondary-text mb-3' data-aos='fade-up' data-aos-duration='700'>{h3}</p> */}
                          <Link to={"/contact"} className='text-decoration-none'>
                              <button className='gold-btn green-btn m-5 mx-auto' data-aos='zoom-out' data-aos-duration='600'>
