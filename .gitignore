@@ -1,0 +1,54 @@
+# Node.js dependencies
+node_modules/
+**/node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
+out/
+
+# IDEs and editors
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS-specific files
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Optional: Ignore coverage results
+coverage/
+
+# Optional: Ignore typescript build outputs
+*.tsbuildinfo
+
+# Optional: Ignore next.js files
+.next/
+out/
+
+# Optional: Ignore remix files
+.build/
+
+# Others
+*.log
