@@ -100,6 +100,12 @@ function Navbar() {
                     Home
                   </NavLink>
                 </li>
+                <li className="nav-item">
+                  <NavLink to={"/about"} activeclassname="active" className="nav-link navhover" >
+                    Team
+                  </NavLink>
+                </li>
+
                 <li className="nav-item position-relative">
                   <Link className="nav-link navhover" >
                     Services
@@ -109,16 +115,19 @@ function Navbar() {
                       <NavLink to={'/services'} activeclassname="active" className="nav-link navhover" aria-current="page" >All Services</NavLink>
                     </div>
                     <div className='nav-item'>
-                      <NavLink to={'/development'} activeclassname="active" className="nav-link navhover" aria-current="page" >Software Development</NavLink>
+                      <NavLink to={'/development'} activeclassname="active" className="nav-link navhover" aria-current="page" > Custom Software Development</NavLink>
                     </div>
                     <div className='nav-item'>
-                      <NavLink to={'/testing'} activeclassname="active" className="nav-link navhover" aria-current="page" >Software Testing</NavLink>
+                      <NavLink to={'/testing'} activeclassname="active" className="nav-link navhover" aria-current="page" >SaaS Product Development</NavLink>
                     </div>
                     <div className='nav-item'>
-                      <NavLink to={'/webdevelopment'} activeclassname="active" className="nav-link navhover" aria-current="page" >Web Development</NavLink>
+                      <NavLink to={'/webdevelopment'} activeclassname="active" className="nav-link navhover" aria-current="page" >AI & ML Engineering</NavLink>
                     </div>
                     <div className='nav-item'>
-                      <NavLink to={'/digitalmarketing'} activeclassname="active" className="nav-link navhover" aria-current="page" >Digital Marketing</NavLink>
+                      <NavLink to={'/digitalmarketing'} activeclassname="active" className="nav-link navhover" aria-current="page" >DevOps & Cloud Engineering</NavLink>
+                    </div>
+                    <div className='nav-item'>
+                      <NavLink to={'/digitalmarketing'} activeclassname="active" className="nav-link navhover" aria-current="page" >Microservices Architecture & Engineering</NavLink>
                     </div>
                   </div>
                 </li>
@@ -127,12 +136,7 @@ function Navbar() {
                     Our works
                   </NavLink>
                 </li>
-                <li className="nav-item">
-                  <NavLink to={"/about"} activeclassname="active" className="nav-link navhover" >
-                    About
-                  </NavLink>
-                </li>
-
+                
                 {/* <li className="nav-item position-relative">
                   <Link className="nav-link navhover" >
                     Pricing

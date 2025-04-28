@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Technologies from "../components/Technologies";
@@ -7,7 +7,7 @@ import Process from "../assets/images/process.png";
 
 import Footer from "../components/Footer";
 import "../assets/css/pricing.scss";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from 'react-router-dom';
 
 // import contact  from '../assets/images/contact.jpg'
 import Techsection from "../components/Techsection";
@@ -16,17 +16,232 @@ import Profiledub from "../assets/images/testing/dub-img.png";
 import Price from "../components/Price";
 
 function Development() {
+
+      useEffect(() => {
+        const banner = document.querySelector('.hero-banner')
+        const handleScroll = () => {
+            if(window.innerWidth > 992){
+                if (window.scrollY > 0 && window.scrollY < 500) {
+                    banner.style.backgroundSize = `${100 + (window.scrollY/20)}%`
+                }
+            }else{
+                if (window.scrollY > 0) {
+                    banner.style.backgroundSize = `${150 + (window.scrollY/10)}%`
+                }
+            }
+        }
+        
+        window.addEventListener('scroll', handleScroll)
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+    const location = useLocation();
+    const isContactPage = location.pathname === '/contact';
+    
+    // Technology expertise data
+    const techCards = [
+        { 
+            title: "Frontend", 
+            technologies: ["React.js", "Next.js", "TailwindCSS"]
+        },
+        {
+            title: "Backend",
+            technologies: ["Node.js", "Express.js", "NestJS"]
+        },
+        {
+            title: "Mobile Apps",
+            technologies: ["Flutter", "React Native"]
+        },
+        {
+            title: "APIs",
+            technologies: ["REST", "GraphQL"]
+        },
+        {
+            title: "Database",
+            technologies: ["MongoDB", "PostgreSQL", "MySQL"]
+        },
+        {
+            title: "Cloud",
+            technologies: ["AWS", "Azure"]
+        },
+        {
+            title: "Authentication",
+            technologies: ["JWT", "OAuth2"]
+        },
+        {
+            title: "Hosting",
+            technologies: ["Vercel", "AWS Elastic Beanstalk"]
+        }
+    ];
+
+
+
   return (
     <div className="software">
       <Navbar />
-      <Banner
-        h1="Software Development"
+      {/* <Banner
+        h1="Custom Software Development"
         h2="Revolutionize Your Operations: Transform with Software Tailored to Your Needs."
-        h3="Utilize the power of technology with our custom software development services.
-        "
-      />
+        
+      /> */}
 
-      <section className="container">
+  <div className='hero-banner hero-2 mt-5' data-aos='fade'>
+        
+              <div className='container text-center green-text'>
+                  <p className="bg-img-2 mb-5 mx-auto" data-aos='fade-up' data-aos-duration='400'>Custom Software Development</p>
+                  <h1 className={`secondary-header mb-3 ${isContactPage?'mb-5 pb-5':''}`} data-aos='fade-up' data-aos-duration='600'>Custom Software Development</h1>
+                  <p className='mb-0 secondary-text mb-3' data-aos='fade-up' data-aos-duration='700'>Revolutionize Your Operations: Transform with Software Tailored to Your Needs.</p>
+                  
+                  {/* Technology Expertise Cards */}
+                  <div className="row mt-5" data-aos='fade-up' data-aos-duration='800'>
+                      <div className="d-flex flex-wrap justify-content-between">
+                          {techCards.map((card, index) => (
+                              <div 
+                                  key={index}
+                                  className="mb-4" 
+                                  style={{width: '12%'}}
+                                  data-aos="fade-up" 
+                                  data-aos-duration={600 + (index * 50)} 
+                                  data-aos-easing="ease-in-back"
+                              >
+                                  <div className="card boxshadow small-card text-center h-100">
+                                      <div className="py-3 secondary-text">
+                                          <p className="fw-bold">{card.title}</p>
+                                          {card.technologies.map((tech, i) => (
+                                              <p key={i} className="mb-1">{tech}</p>
+                                          ))}
+                                      </div>
+                                  </div>
+                              </div>
+                          ))}
+                      </div>
+                  </div>
+                  
+                
+              </div>
+          </div>
+       <section className="bg-green-1 text-light">
+        <div className="pt-5 mt-5">
+          <div className="mt-0 pt-0 my-5 p-5 text-center text-white">
+            <h1
+              className="secondary-header"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-anchor-placement="bottom-bottom"
+            >
+              We’re More than Just Developers. We Solve Real-world Problems By
+              Creating Better Digital Solutions.
+            </h1>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-anchor-placement="bottom-bottom"
+              className="primary-text mb-0 fw-medium"
+            >
+              As a full-stack software development agency, We make some
+              extraordinary things that engage your users.
+            </p>
+            <div className="col-xxl-9 col-xl-10 col-lg-12 mx-auto mt-5 mb-5">
+              <div className="row g-4">
+                <div className="col-md-6 col-lg-4">
+                  <div
+                    className="small-card"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <p className="text-white mb-0">ERP</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                  <div
+                    className="small-card"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <p className="text-white mb-0">CRM</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                  <div
+                    className="small-card"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <p className="text-white mb-0">HR Software</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                  <div
+                    className="small-card"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <p className="text-white mb-0">Enterprise Applications</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                  <div
+                    className="small-card"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <p className="text-white mb-0">Data Analytics</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                  <div
+                    className="small-card"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <p className="text-white mb-0">IT Service Management</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                  <div
+                    className="small-card"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <p className="text-white mb-0">Ecommerce</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                  <div
+                    className="small-card"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <p className="text-white mb-0">Supply Chain</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                  <div
+                    className="small-card"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <p className="text-white mb-0">Web Portals</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      {/* <section className="container">
         <div className="row mt-3 align-items-center justify-content-center ">
           <div
             className="col-lg-10 rounded-5  "
@@ -44,109 +259,154 @@ function Development() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="bgcolor">
-        <div className=" container py-4">
-          <div className="justify-content-center d-flex">
-            <h1 className="text-center bg-img-1">Our Expertise</h1>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-lg-10">
-              <div
-                className=" mt-3 rounded-3 "
-                data-aos="fade-left"
-                data-aos-duration="1000"
-              >
-                <p className="text-center secondary-text ">
-                  We are a team of experienced and passionate software
-                  developers who specialize in crafting cutting-edge solutions
-                  tailored to your specific needs. We have a deep understanding
-                  of various technologies and frameworks, including:
-                </p>
+      </section> */}
+    {/* <section className="bgcolor">
+  <div className="container py-4">
+    <div className="row mt-3">
+      <div className="col-12">
+        <div className="d-flex flex-wrap justify-content-between">
+          
+          <div 
+            className="mb-3" 
+            style={{width: '12%'}}
+            data-aos="fade-up" 
+            data-aos-duration="600" 
+            data-aos-easing="ease-in-back"
+          >
+            <div className="card boxshadow small-card text-center h-100">
+              <div className="py-4 secondary-text">
+                <p className="fw-bold">Frontend</p>
+                <p>React.js</p>
+                <p>Next.js</p>
+                <p>TailwindCSS</p>
               </div>
             </div>
           </div>
-          <div className="row  mt-3">
-            <div className="col-lg-5 col-sm-12 align-items-center d-flex  ">
-              <div className="" data-aos="zoom-in">
-                <img src={Software} className=" img-fluid w-100" alt="" />
+
+          
+          <div 
+            className="mb-3" 
+            style={{width: '12%'}}
+            data-aos="fade-up" 
+            data-aos-duration="700" 
+            data-aos-easing="ease-in-back"
+          >
+            <div className="card boxshadow small-card text-center h-100">
+              <div className="py-4 secondary-text">
+                <p className="fw-bold">Backend</p>
+                <p>Node.js</p>
+                <p>Express.js</p>
+                <p>NestJS</p>
               </div>
             </div>
-            <div className="col-lg-7  col-sm-12 align-items-center d-flex">
-              <div className="row justify-content-around ">
-                <div
-                  className="col-lg-3 col-md-6 col-sm-6  mb-3"
-                  data-aos="fade-up"
-                  data-aos-duration="600"
-                  data-aos-easing="ease-in-back"
-                >
-                  <div className=" card boxshadow small-card text-center">
-                    <div className="py-4 secondary-text">
-                      <p className="fw-bold">Programming Languages:</p>
-                      <p> Python </p>
-                      <p> Java </p>
-                      <p> JavaScript </p>
-                      <p> C++ </p>
-                      <p> C# </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col-lg-3 col-md-6 col-sm-6  mb-3 "
-                  data-aos="fade-up"
-                  data-aos-duration="700"
-                  data-aos-easing="ease-in-back"
-                >
-                  <div className="card boxshadow small-card text-center">
-                    <div className="py-4 secondary-text">
-                      <p className="fw-bold">Web Development Frameworks:</p>
-                      <p>React</p>
-                      <p> Angular</p>
-                      <p>Vue.js</p>
-                      <p>Django</p>
-                      <p>Flask</p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col-lg-3 col-md-6 col-sm-6  mb-3 "
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-easing="ease-in-back"
-                >
-                  <div className="card boxshadow small-card text-center">
-                    <div className="py-4 secondary-text">
-                      <p className="fw-bold">Mobile Development Frameworks:</p>
-                      <p>Flutter</p>
-                      <p> React Native</p>
-                      <p>Kotlin</p>
-                      <p>Swift</p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col-lg-3 col-md-6 col-sm-6   mb-3"
-                  data-aos="fade-up"
-                  data-aos-duration="900"
-                  data-aos-easing="ease-in-back"
-                >
-                  <div className=" card boxshadow small-card text-center">
-                    <div className="py-4 secondary-text">
-                      <p className="fw-bold">Backend/Cloud Platforms:</p>
-                      <p>Mongodb</p>
-                      <p>PL/sql</p>
-                      <p>AWS</p>
-                      <p>Azure</p>
-                      <p> Google Cloud Platform</p>
-                      <p>and others</p>
-                    </div>
-                  </div>
-                </div>
+          </div>
+
+         
+          <div 
+            className="mb-3" 
+            style={{width: '12%'}}
+            data-aos="fade-up" 
+            data-aos-duration="800" 
+            data-aos-easing="ease-in-back"
+          >
+            <div className="card boxshadow small-card text-center h-100">
+              <div className="py-4 secondary-text">
+                <p className="fw-bold">Mobile Apps</p>
+                <p>Flutter</p>
+                <p>React Native</p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div 
+            className="mb-3" 
+            style={{width: '12%'}}
+            data-aos="fade-up" 
+            data-aos-duration="900" 
+            data-aos-easing="ease-in-back"
+          >
+            <div className="card boxshadow small-card text-center h-100">
+              <div className="py-4 secondary-text">
+                <p className="fw-bold">APIs</p>
+                <p>REST</p>
+                <p>GraphQL</p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div 
+            className="mb-3" 
+            style={{width: '12%'}}
+            data-aos="fade-up" 
+            data-aos-duration="600" 
+            data-aos-easing="ease-in-back"
+          >
+            <div className="card boxshadow small-card text-center h-100">
+              <div className="py-4 secondary-text">
+                <p className="fw-bold">Database</p>
+                <p>MongoDB</p>
+                <p>PostgreSQL</p>
+                <p>MySQL</p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div 
+            className="mb-3" 
+            style={{width: '12%'}}
+            data-aos="fade-up" 
+            data-aos-duration="700" 
+            data-aos-easing="ease-in-back"
+          >
+            <div className="card boxshadow small-card text-center h-100">
+              <div className="py-4 secondary-text">
+                <p className="fw-bold">Cloud</p>
+                <p>AWS</p>
+                <p>Azure</p>
+              </div>
+            </div>
+          </div>
+
+         
+          <div 
+            className="mb-3" 
+            style={{width: '12%'}}
+            data-aos="fade-up" 
+            data-aos-duration="800" 
+            data-aos-easing="ease-in-back"
+          >
+            <div className="card boxshadow small-card text-center h-100">
+              <div className="py-4 secondary-text">
+                <p className="fw-bold">Authentication</p>
+                <p>JWT</p>
+                <p>OAuth2</p>
+              </div>
+            </div>
+          </div>
+
+          <div 
+            className="mb-3" 
+            style={{width: '12%'}}
+            data-aos="fade-up" 
+            data-aos-duration="900" 
+            data-aos-easing="ease-in-back"
+          >
+            <div className="card boxshadow small-card text-center h-100">
+              <div className="py-4 secondary-text">
+                <p className="fw-bold">Hosting</p>
+                <p>Vercel</p>
+                <p>AWS Elastic Beanstalk</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section> */}
       <section className="bg-green-1 text-light mt-5">
         <div className="container">
           <div className=" pt-3">
@@ -344,124 +604,7 @@ function Development() {
         </div>
       </section>
 
-      <section className="bg-green-1 text-light">
-        <div className="pt-5 mt-5">
-          <div className="mt-0 pt-0 my-5 p-5 text-center text-white">
-            <h1
-              className="secondary-header"
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-anchor-placement="bottom-bottom"
-            >
-              We’re More than Just Developers. We Solve Real-world Problems By
-              Creating Better Digital Solutions.
-            </h1>
-            <p
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-anchor-placement="bottom-bottom"
-              className="primary-text mb-0 fw-medium"
-            >
-              As a full-stack software development agency, We make some
-              extraordinary things that engage your users.
-            </p>
-            <div className="col-xxl-9 col-xl-10 col-lg-12 mx-auto mt-5 mb-5">
-              <div className="row g-4">
-                <div className="col-md-6 col-lg-4">
-                  <div
-                    className="small-card"
-                    data-aos="fade-up"
-                    data-aos-duration="600"
-                    data-aos-anchor-placement="bottom-bottom"
-                  >
-                    <p className="text-white mb-0">ERP</p>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <div
-                    className="small-card"
-                    data-aos="fade-up"
-                    data-aos-duration="600"
-                    data-aos-anchor-placement="bottom-bottom"
-                  >
-                    <p className="text-white mb-0">CRM</p>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <div
-                    className="small-card"
-                    data-aos="fade-up"
-                    data-aos-duration="600"
-                    data-aos-anchor-placement="bottom-bottom"
-                  >
-                    <p className="text-white mb-0">HR Software</p>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <div
-                    className="small-card"
-                    data-aos="fade-up"
-                    data-aos-duration="600"
-                    data-aos-anchor-placement="bottom-bottom"
-                  >
-                    <p className="text-white mb-0">Enterprise Applications</p>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <div
-                    className="small-card"
-                    data-aos="fade-up"
-                    data-aos-duration="600"
-                    data-aos-anchor-placement="bottom-bottom"
-                  >
-                    <p className="text-white mb-0">Data Analytics</p>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <div
-                    className="small-card"
-                    data-aos="fade-up"
-                    data-aos-duration="600"
-                    data-aos-anchor-placement="bottom-bottom"
-                  >
-                    <p className="text-white mb-0">IT Service Management</p>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <div
-                    className="small-card"
-                    data-aos="fade-up"
-                    data-aos-duration="600"
-                    data-aos-anchor-placement="bottom-bottom"
-                  >
-                    <p className="text-white mb-0">Ecommerce</p>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <div
-                    className="small-card"
-                    data-aos="fade-up"
-                    data-aos-duration="600"
-                    data-aos-anchor-placement="bottom-bottom"
-                  >
-                    <p className="text-white mb-0">Supply Chain</p>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <div
-                    className="small-card"
-                    data-aos="fade-up"
-                    data-aos-duration="600"
-                    data-aos-anchor-placement="bottom-bottom"
-                  >
-                    <p className="text-white mb-0">Web Portals</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       <Techsection />
       {/* <section className="pricing mt-5" id="pricing-section">
