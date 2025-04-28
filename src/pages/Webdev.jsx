@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Technologies from "../components/Technologies";
@@ -10,7 +10,7 @@ import bubble from "../assets/images/bubble.webp";
 import success from "../assets/images/success.png";
 import Footer from "../components/Footer";
 import "../assets/css/pricing.scss";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from 'react-router-dom';
 import footer from "../assets/images/footer.svg";
 import frompng from "../assets/images/fromlogo.jpg";
 // import contact  from '../assets/images/contact.jpg'
@@ -26,14 +26,112 @@ import Price from "../components/Price";
 
 
 function Development() {
+
+  
+        useEffect(() => {
+          const banner = document.querySelector('.hero-banner')
+          const handleScroll = () => {
+              if(window.innerWidth > 992){
+                  if (window.scrollY > 0 && window.scrollY < 500) {
+                      banner.style.backgroundSize = `${100 + (window.scrollY/20)}%`
+                  }
+              }else{
+                  if (window.scrollY > 0) {
+                      banner.style.backgroundSize = `${150 + (window.scrollY/10)}%`
+                  }
+              }
+          }
+          
+          window.addEventListener('scroll', handleScroll)
+          return () => {
+              window.removeEventListener('scroll', handleScroll)
+          }
+      }, [])
+      const location = useLocation();
+      const isContactPage = location.pathname === '/contact';
+      
+      // Technology expertise data
+      const techCards = [
+          { 
+              title: "LLMs & Generative AI", 
+              technologies: ["OpenAI", " Anthropic", "HuggingFace Transformers"]
+          },
+          {
+              title: "Fine-Tuning Models",
+              technologies: ["LoRA", "QLoRA", "HuggingFace"]
+          },
+          {
+              title: "Prompt Engineering",
+              technologies: ["LangChain", " LlamaIndex"]
+          },
+          {
+              title: "Vector Database",
+              technologies: ["Pinecone", "Weaviate","FAISS"]
+          },
+          {
+              title: "Computer Vision",
+              technologies: ["TensorFlow", "PyTorch", "OpenCV"]
+          },
+          {
+              title: "NLP",
+              technologies: ["spaCy", "HuggingFace", "NLTK"]
+          },
+          {
+              title: "Deployment",
+              technologies: ["ONNX", "TensorRT"," AWS SageMaker"]
+          },
+          {
+              title: "Chatbots",
+              technologies: ["RASA", "Dialogflow","LangChain Agents"]
+          },{
+            title: "AI API Integration",
+            technologies: ["Azure OpenAI", "OpenAI GPT-4 Turbo","Claude 3"]
+          }
+      ];
+  
   return (
     <div className="webdev">
       <Navbar />
-      <Banner
+      {/* <Banner
         h1="Web Development"
         h2=" Crafting Websites that Captivate and Convert"
         h3=""
-      />
+      /> */}
+      <div className='hero-banner hero-2 mt-5' data-aos='fade'>
+        
+        <div className='container text-center green-text'>
+            <p className="bg-img-2 mb-5 mx-auto" data-aos='fade-up' data-aos-duration='400'>AI & ML Engineering</p>
+            <h1 className={`secondary-header mb-3 ${isContactPage?'mb-5 pb-5':''}`} data-aos='fade-up' data-aos-duration='600'>Crafting Websites that Captivate and Convert</h1>
+            {/* <p className='mb-0 secondary-text mb-3' data-aos='fade-up' data-aos-duration='700'>Revolutionize Your Operations: Transform with Software Tailored to Your Needs.</p> */}
+            
+            {/* Technology Expertise Cards */}
+            <div className="row mt-5" data-aos='fade-up' data-aos-duration='800'>
+                <div className="d-flex flex-wrap justify-content-between">
+                    {techCards.map((card, index) => (
+                        <div 
+                            key={index}
+                            className="mb-4" 
+                            style={{width: '12%'}}
+                            data-aos="fade-up" 
+                            data-aos-duration={600 + (index * 50)} 
+                            data-aos-easing="ease-in-back"
+                        >
+                            <div className="card boxshadow small-card text-center h-100">
+                                <div className="py-3 secondary-text">
+                                    <p className="fw-bold">{card.title}</p>
+                                    {card.technologies.map((tech, i) => (
+                                        <p key={i} className="mb-1">{tech}</p>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            
+          
+        </div>
+    </div>
 
       <section className="container">
         <div className="row mt-3 align-items-center justify-content-center ">

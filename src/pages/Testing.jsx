@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Footer from '../components/Footer';
@@ -19,15 +19,110 @@ import Price from '../components/Price';
 
 
 function Testing() {
+
+    useEffect(() => {
+          const banner = document.querySelector('.hero-banner')
+          const handleScroll = () => {
+              if(window.innerWidth > 992){
+                  if (window.scrollY > 0 && window.scrollY < 500) {
+                      banner.style.backgroundSize = `${100 + (window.scrollY/20)}%`
+                  }
+              }else{
+                  if (window.scrollY > 0) {
+                      banner.style.backgroundSize = `${150 + (window.scrollY/10)}%`
+                  }
+              }
+          }
+          
+          window.addEventListener('scroll', handleScroll)
+          return () => {
+              window.removeEventListener('scroll', handleScroll)
+          }
+      }, [])
+      const location = useLocation();
+      const isContactPage = location.pathname === '/contact';
+      
+      // Technology expertise data
+      const techCards = [
+          { 
+              title: "Web Framework", 
+              technologies: ["Next.js (Fullstack)", "MERN Stack"]
+          },
+          {
+              title: "Billing & Payments",
+              technologies: ["Stripe", "Razorpay.js", "PayPal APIs"]
+          },
+          {
+              title: "Authentication/SSO",
+              technologies: ["Auth0", "Firebase Auth","Keycloak"]
+          },
+          {
+              title: "Backend APIs",
+              technologies: ["REST", "GraphQL"]
+          },
+          {
+              title: "Database",
+              technologies: ["MongoDB Atlas", "PostgreSQL"]
+          },
+          {
+              title: "Multi-Tenancy",
+              technologies: ["MongoDB Partitioning", " AWS RDS"]
+          },
+          {
+              title: "Deployment/Hosting",
+              technologies: ["AWS EC2", " AWS Lambda","Vercel","Render"]
+          },
+          {
+              title: "Storage & File Uploads",
+              technologies: ["AWS S3", "Cloudinary"]
+          }
+      ];
+
+
   return (
-    <div className="">
+    <div className="software">
       <div>
         <Navbar />
-        <Banner
+        {/* <Banner
           h1="Software Testing"
           h2="Shield Your Software: Bulletproof Testing for a Flawless User Experience"
           h3="Bugs be gone! Our comprehensive software testing services identify and eradicate defects before they impact your users. Deliver confidence and quality with every release."
-        />
+        /> */}
+   <div className='hero-banner hero-2 mt-5' data-aos='fade'>
+       
+        <div className='container text-center green-text'>
+           <p className="bg-img-2 mb-5 mx-auto" data-aos='fade-up' data-aos-duration='400'>SaaS Product Development</p>
+           <h1 className={`secondary-header mb-3 ${isContactPage?'mb-5 pb-5':''}`} data-aos='fade-up' data-aos-duration='600'>Shield Your Software: Bulletproof Testing for a Flawless User Experience</h1>
+           <p className='mb-0 secondary-text mb-3' data-aos='fade-up' data-aos-duration='700'>Bugs be gone! Our comprehensive software testing services identify and eradicate defects before they impact your users. Deliver confidence and quality with every release.</p>
+           
+           {/* Technology Expertise Cards */}
+           <div className="row mt-5" data-aos='fade-up' data-aos-duration='800'>
+               <div className="d-flex flex-wrap justify-content-between">
+                   {techCards.map((card, index) => (
+                       <div 
+                           key={index}
+                           className="mb-4" 
+                           style={{width: '12%'}}
+                           data-aos="fade-up" 
+                           data-aos-duration={600 + (index * 50)} 
+                           data-aos-easing="ease-in-back"
+                       >
+                           <div className="card boxshadow small-card text-center h-100">
+                               <div className="py-3 secondary-text">
+                                   <p className="fw-bold">{card.title}</p>
+                                   {card.technologies.map((tech, i) => (
+                                       <p key={i} className="mb-1">{tech}</p>
+                                   ))}
+                               </div>
+                           </div>
+                       </div>
+                   ))}
+               </div>
+           </div>
+           
+          
+        </div>
+   </div>
       </div>
 
       {/* Bug Squashing section */}

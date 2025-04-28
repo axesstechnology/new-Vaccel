@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
@@ -10,18 +10,111 @@ import Price from "../components/Price";
 // import axios from "axios";
 
 export default function DigitalMarketing() {
+      useEffect(() => {
+            const banner = document.querySelector('.hero-banner')
+            const handleScroll = () => {
+                if(window.innerWidth > 992){
+                    if (window.scrollY > 0 && window.scrollY < 500) {
+                        banner.style.backgroundSize = `${100 + (window.scrollY/20)}%`
+                    }
+                }else{
+                    if (window.scrollY > 0) {
+                        banner.style.backgroundSize = `${150 + (window.scrollY/10)}%`
+                    }
+                }
+            }
+            
+            window.addEventListener('scroll', handleScroll)
+            return () => {
+                window.removeEventListener('scroll', handleScroll)
+            }
+        }, [])
+        const location = useLocation();
+        const isContactPage = location.pathname === '/contact';
+        
+        // Technology expertise data
+        const techCards = [
+          {
+            title: "CI/CD Pipelines",
+            technologies: ["GitHub Actions", "GitLab CI", "Jenkins"]
+          },
+          {
+            title: "Containerization",
+            technologies: ["Docker", "Kubernetes (EKS, AKS)"]
+          },
+          {
+            title: "Infrastructure as Code",
+            technologies: ["Terraform", "Pulumi"]
+          },
+          {
+            title: "Monitoring",
+            technologies: ["Prometheus", "Grafana", "Datadog", "NewRelic"]
+          },
+          {
+            title: "Cloud Providers",
+            technologies: ["AWS", "Azure", "GCP"]
+          },
+          {
+            title: "Serverless Computing",
+            technologies: ["AWS Lambda", "Azure Functions"]
+          },
+          {
+            title: "Secrets Management",
+            technologies: ["HashiCorp Vault", "AWS Secrets Manager"]
+          },
+          {
+            title: "Log Management",
+            technologies: ["ELK Stack (Elasticsearch, Logstash, Kibana)"]
+          }
+        ];
+  
 
 
   return (
     <div>
-      <div className="digital">
+      <div className="software">
         <Navbar />
-        <Banner
+        {/* <Banner
           h1="Digital Marketing"
           h2="Axess Digital Marketing: Ignite Your Brand and Dominate the Digital Landscape.
                     "
           h3="A dazzling website that showcases your brand story and engages your audience like never before."
-        />
+        /> */}
+        <div className='hero-banner hero-2 mt-5' data-aos='fade'>
+        
+        <div className='container text-center green-text'>
+            <p className="bg-img-2 mb-5 mx-auto" data-aos='fade-up' data-aos-duration='400'>DevOps & Cloud Engineering</p>
+            <h1 className={`secondary-header mb-3 ${isContactPage?'mb-5 pb-5':''}`} data-aos='fade-up' data-aos-duration='600'>Axess Digital Marketing: Ignite Your Brand and Dominate the Digital Landscape.</h1>
+            <p className='mb-0 secondary-text mb-3' data-aos='fade-up' data-aos-duration='700'>A dazzling website that showcases your brand story and engages your audience like never before.</p>
+            
+            {/* Technology Expertise Cards */}
+            <div className="row mt-5" data-aos='fade-up' data-aos-duration='800'>
+                <div className="d-flex flex-wrap justify-content-between">
+                    {techCards.map((card, index) => (
+                        <div 
+                            key={index}
+                            className="mb-4" 
+                            style={{width: '12%'}}
+                            data-aos="fade-up" 
+                            data-aos-duration={600 + (index * 50)} 
+                            data-aos-easing="ease-in-back"
+                        >
+                            <div className="card boxshadow small-card text-center h-100">
+                                <div className="py-3 secondary-text">
+                                    <p className="fw-bold">{card.title}</p>
+                                    {card.technologies.map((tech, i) => (
+                                        <p key={i} className="mb-1">{tech}</p>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            
+          
+        </div>
+    </div>
 
         <div>
           <div className="primary-mb">
