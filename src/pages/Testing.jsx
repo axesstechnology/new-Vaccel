@@ -53,7 +53,7 @@ function Testing() {
               technologies: ["Stripe", "Razorpay.js", "PayPal APIs"]
           },
           {
-              title: "Authentication/SSO",
+              title: "Authentication/ SSO",
               technologies: ["Auth0", "Firebase Auth","Keycloak"]
           },
           {
@@ -69,7 +69,7 @@ function Testing() {
               technologies: ["MongoDB Partitioning", " AWS RDS"]
           },
           {
-              title: "Deployment/Hosting",
+              title: "Deployment/ Hosting",
               technologies: ["AWS EC2", " AWS Lambda","Vercel","Render"]
           },
           {
@@ -108,7 +108,7 @@ function Testing() {
                            data-aos-easing="ease-in-back"
                        >
                            <div className="card boxshadow small-card text-center h-100">
-                               <div className="py-3 secondary-text">
+                               <div className="py-4 px-3 secondary-text">
                                    <p className="fw-bold">{card.title}</p>
                                    {card.technologies.map((tech, i) => (
                                        <p key={i} className="mb-1">{tech}</p>

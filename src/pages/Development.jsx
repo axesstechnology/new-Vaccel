@@ -90,8 +90,8 @@ function Development() {
         
               <div className='container text-center green-text'>
                   <p className="bg-img-2 mb-5 mx-auto" data-aos='fade-up' data-aos-duration='400'>Custom Software Development</p>
-                  <h1 className={`secondary-header mb-3 ${isContactPage?'mb-5 pb-5':''}`} data-aos='fade-up' data-aos-duration='600'>Custom Software Development</h1>
-                  <p className='mb-0 secondary-text mb-3' data-aos='fade-up' data-aos-duration='700'>Revolutionize Your Operations: Transform with Software Tailored to Your Needs.</p>
+                  <h1 className={`secondary-header mb-3 ${isContactPage?'mb-5 pb-5':''}`} data-aos='fade-up' data-aos-duration='600'>Revolutionize Your Operations: Transform with Software Tailored to Your Needs.</h1>
+                  {/* <p className='mb-0 secondary-text mb-3' data-aos='fade-up' data-aos-duration='700'></p> */}
                   
                   {/* Technology Expertise Cards */}
                   <div className="row mt-5" data-aos='fade-up' data-aos-duration='800'>
