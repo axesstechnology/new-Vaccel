@@ -176,10 +176,10 @@ function Contact() {
 
         if (!contact.fname || !contact.lname || !contact.email || !contact.phone) {
             setErrors({
-                fname: !contact.fname ? "FirstName is required." : "",
-                lname: !contact.lname ? "LastName is required." : "",
-                email: !contact.email ? "Email is required." : "",
-                phone: !contact.phone ? "Phone.No is required." : "",
+                fname: !contact.fname ? "Please enter your first name" : "",
+                lname: !contact.lname ? "Please enter your last name" : "",
+                email: !contact.email ? "Please enter your email" : "",
+                phone: !contact.phone ? "Please enter your mobile number" : "",
             });
             return;
         }

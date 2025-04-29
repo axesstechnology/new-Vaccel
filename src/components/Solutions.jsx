@@ -14,7 +14,7 @@ export default function Solutions() {
         <div className="container">
           <div className="row align-items-center g-5">
             <div className="col-md-4">
-              <img
+              <img style={{height: "250px", objectFit: "cover" }}
                 src={cardimg}
                 data-aos="flip-left"
                 data-aos-duration="600"
