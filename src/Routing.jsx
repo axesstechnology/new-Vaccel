@@ -32,7 +32,7 @@ import Empreg from './Dashboard/Empreg';
 import Digitalcontact from './components/Digitalcontact';
 import Digitalcontact1 from './components/Digitalcontact1';
 import Ourworknew from './components/Ourworknew';
-
+import MicroServices from './pages/MicroServices'
 
 
 
@@ -77,6 +77,7 @@ function Routing() {
                     <Route path='/empreg' element={<Empreg />} />
                     <Route path='/digitalcontact' element={<Digitalcontact/>}/>
                     <Route path='/Digitalcontact1' element={<Digitalcontact1/>} />
+                    <Route path='/micro-services' element={<MicroServices/>} />
                 </Routes>
             </BrowserRouter>
         </div>
