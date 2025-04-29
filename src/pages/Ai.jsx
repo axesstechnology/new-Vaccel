@@ -32,7 +32,7 @@ function Ai() {
       <div className="text-center">
         <p className="fs-5 mt-4">
           In today's digital age, having robust and innovative software is no
-          longer a luxury, it's a necessity for businesses to thrive. At Axess
+          longer a luxury, it's a necessity for businesses to thrive. At V-Accel
           Technology, we understand the power of software and its ability to
           transform your operations, streamline processes, and unlock new
           opportunities for growth.

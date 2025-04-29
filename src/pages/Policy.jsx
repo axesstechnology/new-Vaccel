@@ -21,9 +21,9 @@ function Policy() {
               <h4 className="gold-text-2 mt-3">1. Introduction</h4>
               <p className="secondary-text">
                 V-Accel (“us”, “we”, or “our”) operates at
-                https://axesstechnology.in/(hereinafter referred to as
+               (hereinafter referred to as
                 “Service”). Our Privacy Policy governs your visit to
-                https://axesstechnology.in/ and explains how we collect,
+                 and explains how we collect,
                 safeguard, and disclose information that results from your use
                 of our Service. We use your data to provide and improve Service.
                 By using the Service, you agree to the collection and use of
@@ -216,7 +216,7 @@ function Policy() {
                 correct, amend, delete, or limit the use of your Personal Data.
                 If you wish to be informed what Personal Data we hold about you
                 and if you want it to be removed from our systems, please email
-                us at info@axesstechnology.in. In certain circumstances, you
+                us at info@v-accel.ai. In certain circumstances, you
                 have the following data protection rights: 0.1. the right to
                 access, update or delete the information we have on you; 0.2.
                 the right of rectification. You have the right to have your
@@ -258,7 +258,7 @@ function Policy() {
                 website; 0.3. users will be notified of any privacy policy
                 changes on our Privacy Policy Page; 0.4. users are able to
                 change their personal information by emailing us at
-                info@axesstechnology.in. Our Policy on “Do Not Track” Signals:
+                info@v-accel.ai. Our Policy on “Do Not Track” Signals:
                 We honor Do Not Track signals and do not track, plant cookies,
                 or use advertising when a Do Not Track browser mechanism is in
                 place. Do Not Track is a preference you can set in your web
@@ -318,7 +318,7 @@ function Policy() {
                 information to function. But in no circumstances, we will
                 discriminate against you for exercising your rights. To exercise
                 your California data protection rights described above, please
-                send your request(s) by email: info@axesstechnology.in. Your
+                send your request(s) by email: info@v-accel.ai. Your
                 data protection rights, described above, are covered by the
                 CCPA, short for the California Consumer Privacy Act. To find out
                 more, visit the official California Legislative Information
@@ -391,7 +391,7 @@ function Policy() {
               <h4 className="gold-text-2">21. Contact Us</h4>
               <p className="secondary-text">
                 If you have any questions about this Privacy Policy, please
-                contact us by email: <Link to={'mailto: info@axesstechnology.in'} className="text-decoration-none concolor"> info@axesstechnology.in</Link>
+                contact us by email: <Link to={'mailto: info@v-accel.ai'} className="text-decoration-none concolor"> info@v-accel.ai</Link>
               </p>
             </div>
           </div>

@@ -105,7 +105,7 @@ function Development() {
             {/* <p className='mb-0 secondary-text mb-3' data-aos='fade-up' data-aos-duration='700'>Revolutionize Your Operations: Transform with Software Tailored to Your Needs.</p> */}
             
             {/* Technology Expertise Cards */}
-            <div className="row mt-5" data-aos='fade-up' data-aos-duration='800'>
+            {/* <div className="row mt-5" data-aos='fade-up' data-aos-duration='800'>
                 <div className="d-flex flex-wrap justify-content-between">
                     {techCards.map((card, index) => (
                         <div 
@@ -127,8 +127,38 @@ function Development() {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> */}
             
+            <div className="row mt-5" data-aos="fade-up" data-aos-duration="800">
+  <div 
+    className="d-flex flex-wrap justify-content-center" 
+    style={{ columnGap: '2%', rowGap: '30px' }} // spacing between cards
+  >
+    {techCards.map((card, index) => (
+      <React.Fragment key={index}>
+        <div 
+          style={{ width: '18%' }} // allows 5 cards in first row with gaps
+          data-aos="fade-up" 
+          data-aos-duration={600 + (index * 50)} 
+          data-aos-easing="ease-in-back"
+        >
+          <div className="card boxshadow small-card text-center h-100">
+            <div className="py-3 secondary-text">
+              <p className="fw-bold">{card.title}</p>
+              {card.technologies.map((tech, i) => (
+                <p key={i} className="mb-1">{tech}</p>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Line break after 5th card */}
+        {index === 4 && <div className="w-100" />}
+      </React.Fragment>
+    ))}
+  </div>
+</div>
+
           
         </div>
     </div>
@@ -215,7 +245,7 @@ function Development() {
         </div>
         <div className="row justify-content-center">
           <div className="col-md-8 secondary-text">
-            That's the Axess web development magic. We combine creative vision
+            That's the V-Accel web development magic. We combine creative vision
             with technical expertise to design and build websites that are not
             just visually stunning, but strategically crafted to achieve your
             business goals.
@@ -579,7 +609,7 @@ function Development() {
                               </div>
                               <div className="my-3 border"></div>
                               <div className="seperator"></div>
-                              <p className="description heading5">"My old website was outdated and didn't reflect our brand's personality. Axess completely transformed it! The design is modern, engaging, and truly captures our essence. Plus, it's user-friendly and mobile-responsive, which has boosted our online traffic and conversions significantly. Thank you, Axess!"{" "}</p>
+                              <p className="description heading5">"My old website was outdated and didn't reflect our brand's personality. V-Accel completely transformed it! The design is modern, engaging, and truly captures our essence. Plus, it's user-friendly and mobile-responsive, which has boosted our online traffic and conversions significantly. Thank you, V-Accel!"{" "}</p>
                             </div>
                           </div>
                         </div>
@@ -689,7 +719,7 @@ function Development() {
                               </div>
                               <div className="my-3 border"></div>
                               <div className="seperator"></div>
-                              <p className="description heading5">"We needed a website that not only looked good but also generated leads and sales. Axess delivered! Their SEO expertise and conversion-focused design have increased our website traffic by 30% and leads by 25%. They even helped us set up automated marketing workflows, streamlining our sales process. We're thrilled with the results!"{" "}</p>
+                              <p className="description heading5">"We needed a website that not only looked good but also generated leads and sales.V-Accel delivered! Their SEO expertise and conversion-focused design have increased our website traffic by 30% and leads by 25%. They even helped us set up automated marketing workflows, streamlining our sales process. We're thrilled with the results!"{" "}</p>
                             </div>
                           </div>
                         </div>
@@ -799,7 +829,7 @@ function Development() {
                               </div>
                               <div className="my-3 border"></div>
                               <div className="seperator"></div>
-                              <p className="description heading5">"As a small business owner, I needed a website that was easy to manage and update myself. Axess delivered a user-friendly CMS that allows me to make changes and add content effortlessly. They also ensured the website is accessible to everyone, which is important to our values. We're grateful for their expertise and commitment to inclusivity."{" "}</p>
+                              <p className="description heading5">"As a small business owner, I needed a website that was easy to manage and update myself.V-Accel delivered a user-friendly CMS that allows me to make changes and add content effortlessly. They also ensured the website is accessible to everyone, which is important to our values. We're grateful for their expertise and commitment to inclusivity."{" "}</p>
                             </div>
                           </div>
                         </div>
@@ -909,7 +939,7 @@ function Development() {
                               </div>
                               <div className="my-3 border"></div>
                               <div className="seperator"></div>
-                              <p className="description heading5">"Working with Axess was a breeze. They listened carefully to our needs and preferences, even incorporating personal touches that made the website feel truly unique to our brand. They were also patient and collaborative throughout the process, addressing our questions and concerns promptly. We highly recommend them!"{" "}</p>
+                              <p className="description heading5">"Working with V-Accel was a breeze. They listened carefully to our needs and preferences, even incorporating personal touches that made the website feel truly unique to our brand. They were also patient and collaborative throughout the process, addressing our questions and concerns promptly. We highly recommend them!"{" "}</p>
                             </div>
                           </div>
                         </div>

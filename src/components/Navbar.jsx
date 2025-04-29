@@ -66,7 +66,7 @@ function Navbar() {
           <p>Technology</p>
         </NavLink>  */}
         
-        <NavLink 
+        {/* <NavLink 
   to='/' 
   className='d-none d-lg-flex align-items-center justify-content-center col-12 col-lg-4 order-1 order-lg-2'
 >
@@ -83,15 +83,39 @@ function Navbar() {
     <img 
       src={vlogo} 
       alt="Logo" 
-      style={{ width: '60px', height: '100px', objectFit: 'contain' }} 
+      style={{ width: '80px', height: '110px', objectFit: 'contain' }} 
     />
     <p className="mb-0" style={{ fontSize: '48px', fontWeight: '700', whiteSpace: 'nowrap', letterSpacing: '4px',color:'#1f4051' }}>
       AI Dynamics
     </p>
   </div>
-</NavLink>
+</NavLink> */}
+
+<div className="container-fluid px-4">
+  <div className="row align-items-center">
+    {/* Logo at top left */}
+    <div className="col-6 col-lg-2 d-flex justify-content-start align-items-center">
+      <img 
+        src={vlogo} 
+        alt="Logo" 
+        style={{ width: '80px', height: '110px', objectFit: 'contain' }} 
+      />
+    </div>
+
+    {/* Centered heading */}
+   =<div className="col-12 col-lg-8 d-flex justify-content-center">
+  <div className="d-flex align-items-center">
+    <p className="mb-0" style={{ fontSize: '48px', fontWeight: '700', whiteSpace: 'nowrap', letterSpacing: '4px', color: '#1f4051' }}>
+      V<span style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}>-</span>Accel AI Dynamics
+    </p>
+  </div>
+</div>
 
 
+    {/* Empty column for spacing/alignment on larger screens */}
+    <div className="col-lg-2 d-none d-lg-block"></div>
+  </div>
+</div>
 
         {/* <div className='order-3 order-lg-3'> */}
           {/* <NavLink to={'/login'} className='gold-btn px-4'>

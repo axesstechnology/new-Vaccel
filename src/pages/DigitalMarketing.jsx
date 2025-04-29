@@ -84,7 +84,7 @@ export default function DigitalMarketing() {
         
         <div className='container text-center green-text'>
             <p className="bg-img-2 mb-5 mx-auto" data-aos='fade-up' data-aos-duration='400'>DevOps & Cloud Engineering</p>
-            <h1 className={`secondary-header mb-3 ${isContactPage?'mb-5 pb-5':''}`} data-aos='fade-up' data-aos-duration='600'>Axess Digital Marketing: Ignite Your Brand and Dominate the Digital Landscape.</h1>
+            <h1 className={`secondary-header mb-3 ${isContactPage?'mb-5 pb-5':''}`} data-aos='fade-up' data-aos-duration='600'>V-Accel Digital Marketing: Ignite Your Brand and Dominate the Digital Landscape.</h1>
             <p className='mb-0 secondary-text mb-3' data-aos='fade-up' data-aos-duration='700'>A dazzling website that showcases your brand story and engages your audience like never before.</p>
             
             {/* Technology Expertise Cards */}
@@ -194,7 +194,7 @@ export default function DigitalMarketing() {
                     data-aos-duration="600"
                     className="secondary-text mx-auto text-center m-5 "
                   >
-                    That's the Axess Digital Marketing difference. We don't just
+                    That's the V-Accel Digital Marketing difference. We don't just
                     tick boxes; we craft data-driven strategies that deliver
                     tangible results. We're your partners in digital disruption,
                     constantly pushing boundaries and exploring new avenues to
@@ -452,7 +452,7 @@ export default function DigitalMarketing() {
                                 </div>
                                 <div className="my-3 border"></div>
                                 <div className="seperator"></div>
-                                <p className="description heading5">Search engine heroics! Thanks to Axess' SEO expertise, our website now ranks at the top for relevant keywords. Organic traffic has skyrocketed, and leads from our website have tripled. They truly understand the magic of search engines!{" "}</p>
+                                <p className="description heading5">Search engine heroics! Thanks to V-Accel's SEO expertise, our website now ranks at the top for relevant keywords. Organic traffic has skyrocketed, and leads from our website have tripled. They truly understand the magic of search engines!{" "}</p>
                               </div>
                             </div>
                           </div>
@@ -561,7 +561,7 @@ export default function DigitalMarketing() {
                                 </div>
                                 <div className="my-3 border"></div>
                                 <div className="seperator"></div>
-                                <p className="description heading5">Email marketing magic! Our email open rates used to be dismal. Axess' personalized email campaigns transformed that. Now, our subscribers are engaged, clicking through with enthusiasm. We've even seen a significant increase in repeat purchases thanks to targeted email nurture sequences{" "}</p>
+                                <p className="description heading5">Email marketing magic! Our email open rates used to be dismal. V-Accel' personalized email campaigns transformed that. Now, our subscribers are engaged, clicking through with enthusiasm. We've even seen a significant increase in repeat purchases thanks to targeted email nurture sequences{" "}</p>
                               </div>
                             </div>
                           </div>
@@ -670,7 +670,7 @@ export default function DigitalMarketing() {
                                 </div>
                                 <div className="my-3 border"></div>
                                 <div className="seperator"></div>
-                                <p className="description heading5">Data-driven decisions, real results! Axess doesn't just throw darts in the dark. They strategically analyze data to make informed decisions about our online marketing campaigns. This data-driven approach has led to a 20% increase in our conversion rate and a 15% reduction in our advertising costs. They're true marketing wizards!{" "}</p>
+                                <p className="description heading5">Data-driven decisions, real results! V-Accel doesn't just throw darts in the dark. They strategically analyze data to make informed decisions about our online marketing campaigns. This data-driven approach has led to a 20% increase in our conversion rate and a 15% reduction in our advertising costs. They're true marketing wizards!{" "}</p>
                               </div>
                             </div>
                           </div>
@@ -779,7 +779,7 @@ export default function DigitalMarketing() {
                                 </div>
                                 <div className="my-3 border"></div>
                                 <div className="seperator"></div>
-                                <p className="description heading5">Holistic approach, exceptional results! Axess doesn't just focus on one aspect of digital marketing. They take a holistic approach, integrating different strategies seamlessly. This has resulted in a cohesive online presence that attracts, engages, and converts our target audience effectively. We're incredibly happy with their comprehensive approach!{" "}</p>
+                                <p className="description heading5">Holistic approach, exceptional results! V-Accel doesn't just focus on one aspect of digital marketing. They take a holistic approach, integrating different strategies seamlessly. This has resulted in a cohesive online presence that attracts, engages, and converts our target audience effectively. We're incredibly happy with their comprehensive approach!{" "}</p>
                               </div>
                             </div>
                           </div>

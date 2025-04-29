@@ -57,84 +57,117 @@ function Services() {
   };
 
   let handleScroll = () => {
-    let softdevElement1 = document.getElementById("softdev");
-    let softdevElement2 = document.getElementById("softtest");
-    let softdevElement3 = document.getElementById("webdev");
-    let softdevElement4 = document.getElementById("digi");
-    let softdevElement5 = document.getElementById("micro");
+    // let softdevElement1 = document.getElementById("softdev");
+    // let softdevElement2 = document.getElementById("softtest");
+    // let softdevElement3 = document.getElementById("webdev");
+    // let softdevElement4 = document.getElementById("digi");
+    // let softdevElement5 = document.getElementById("micro");
 
-    let softdevTarget1 = document.querySelector(
-      '.service-nav[data-axess-target="softdev"]'
-    );
-    let softdevTarget2 = document.querySelector(
-      '.service-nav[data-axess-target="softtest"]'
-    );
-    let softdevTarget3 = document.querySelector(
-      '.service-nav[data-axess-target="webdev"]'
-    );
-    let softdevTarget4 = document.querySelector(
-      '.service-nav[data-axess-target="digi"]'
-    );
-    let softdevTarget5 = document.querySelector(
-      '.service-nav[data-axess-target="micro"]'
-    );
+    // let softdevTarget1 = document.querySelector(
+    //   '.service-nav[data-axess-target="softdev"]'
+    // );
+    // let softdevTarget2 = document.querySelector(
+    //   '.service-nav[data-axess-target="softtest"]'
+    // );
+    // let softdevTarget3 = document.querySelector(
+    //   '.service-nav[data-axess-target="webdev"]'
+    // );
+    // let softdevTarget4 = document.querySelector(
+    //   '.service-nav[data-axess-target="digi"]'
+    // );
+    // let softdevTarget5 = document.querySelector(
+    //   '.service-nav[data-axess-target="micro"]'
+    // );
 
-    if (
-      window.scrollY >= softdevElement1.offsetTop - 0 &&
-      window.scrollY < softdevElement2.offsetTop
-    ) {
-      softdevTarget1.classList.add("active");
-      softdevTarget2.classList.remove("active");
-      softdevTarget3.classList.remove("active");
-      softdevTarget4.classList.remove("active");
-      softdevElement1.classList.add("active");
-      softdevElement2.classList.remove("active");
-      softdevElement3.classList.remove("active");
-      softdevElement4.classList.remove("active");
-    } else if (
-      window.scrollY >= softdevElement2.offsetTop - 50 &&
-      window.scrollY < softdevElement3.offsetTop
-    ) {
-      softdevTarget1.classList.remove("active");
-      softdevTarget2.classList.add("active");
-      softdevTarget3.classList.remove("active");
-      softdevTarget4.classList.remove("active");
-      softdevElement1.classList.remove("active");
-      softdevElement2.classList.add("active");
-      softdevElement3.classList.remove("active");
-      softdevElement4.classList.remove("active");
-    } else if (
-      window.scrollY >= softdevElement3.offsetTop - 50 &&
-      window.scrollY < softdevElement4.offsetTop
-    ) {
-      softdevTarget1.classList.remove("active");
-      softdevTarget2.classList.remove("active");
-      softdevTarget3.classList.add("active");
-      softdevTarget4.classList.remove("active");
-      softdevElement1.classList.remove("active");
-      softdevElement2.classList.remove("active");
-      softdevElement3.classList.add("active");
-      softdevElement4.classList.remove("active");
-    } else if (window.scrollY + 50 >= softdevElement4.offsetTop) {
-      softdevTarget1.classList.remove("active");
-      softdevTarget2.classList.remove("active");
-      softdevTarget3.classList.remove("active");
-      softdevTarget4.classList.add("active");
-      softdevElement1.classList.remove("active");
-      softdevElement2.classList.remove("active");
-      softdevElement3.classList.remove("active");
-      softdevElement4.classList.add("active");
-    } else {
-      document
-        .querySelectorAll(".service-nav[data-axess-target]")
-        .forEach((element) => {
-          element.classList.remove("active");
-          softdevElement1.classList.remove("active");
-          softdevElement2.classList.remove("active");
-          softdevElement3.classList.remove("active");
-          softdevElement4.classList.remove("active");
-        });
+    // if (
+    //   window.scrollY >= softdevElement1.offsetTop - 0 &&
+    //   window.scrollY < softdevElement2.offsetTop
+    // ) {
+    //   softdevTarget1.classList.add("active");
+    //   softdevTarget2.classList.remove("active");
+    //   softdevTarget3.classList.remove("active");
+    //   softdevTarget4.classList.remove("active");
+    //   softdevElement1.classList.add("active");
+    //   softdevElement2.classList.remove("active");
+    //   softdevElement3.classList.remove("active");
+    //   softdevElement4.classList.remove("active");
+    // } else if (
+    //   window.scrollY >= softdevElement2.offsetTop - 50 &&
+    //   window.scrollY < softdevElement3.offsetTop
+    // ) {
+    //   softdevTarget1.classList.remove("active");
+    //   softdevTarget2.classList.add("active");
+    //   softdevTarget3.classList.remove("active");
+    //   softdevTarget4.classList.remove("active");
+    //   softdevElement1.classList.remove("active");
+    //   softdevElement2.classList.add("active");
+    //   softdevElement3.classList.remove("active");
+    //   softdevElement4.classList.remove("active");
+    // } else if (
+    //   window.scrollY >= softdevElement3.offsetTop - 50 &&
+    //   window.scrollY < softdevElement4.offsetTop
+    // ) {
+    //   softdevTarget1.classList.remove("active");
+    //   softdevTarget2.classList.remove("active");
+    //   softdevTarget3.classList.add("active");
+    //   softdevTarget4.classList.remove("active");
+    //   softdevElement1.classList.remove("active");
+    //   softdevElement2.classList.remove("active");
+    //   softdevElement3.classList.add("active");
+    //   softdevElement4.classList.remove("active");
+    // } else if (window.scrollY + 50 >= softdevElement4.offsetTop) {
+    //   softdevTarget1.classList.remove("active");
+    //   softdevTarget2.classList.remove("active");
+    //   softdevTarget3.classList.remove("active");
+    //   softdevTarget4.classList.add("active");
+    //   softdevElement1.classList.remove("active");
+    //   softdevElement2.classList.remove("active");
+    //   softdevElement3.classList.remove("active");
+    //   softdevElement4.classList.add("active");
+    // } else {
+    //   document
+    //     .querySelectorAll(".service-nav[data-axess-target]")
+    //     .forEach((element) => {
+    //       element.classList.remove("active");
+    //       softdevElement1.classList.remove("active");
+    //       softdevElement2.classList.remove("active");
+    //       softdevElement3.classList.remove("active");
+    //       softdevElement4.classList.remove("active");
+    //     });
+    // }
+    const sections = [
+      { element: document.getElementById("softdev"), nav: document.querySelector('.service-nav[data-axess-target="softdev"]') },
+      { element: document.getElementById("softtest"), nav: document.querySelector('.service-nav[data-axess-target="softtest"]') },
+      { element: document.getElementById("webdev"), nav: document.querySelector('.service-nav[data-axess-target="webdev"]') },
+      { element: document.getElementById("digi"), nav: document.querySelector('.service-nav[data-axess-target="digi"]') },
+      { element: document.getElementById("micro"), nav: document.querySelector('.service-nav[data-axess-target="micro"]') },
+    ];
+    
+    const scrollY = window.scrollY + 100; // buffer/padding for earlier activation
+    
+    let activeFound = false;
+    
+    sections.forEach((section, index) => {
+      const currentTop = section.element.offsetTop;
+      const nextTop = sections[index + 1]?.element.offsetTop || Infinity;
+    
+      if (scrollY >= currentTop && scrollY < nextTop) {
+        section.nav.classList.add("active");
+        section.element.classList.add("active");
+        activeFound = true;
+      } else {
+        section.nav.classList.remove("active");
+        section.element.classList.remove("active");
+      }
+    });
+    
+    if (!activeFound) {
+      sections.forEach((section) => {
+        section.nav.classList.remove("active");
+        section.element.classList.remove("active");
+      });
     }
+    
   };
 
   window.addEventListener("scroll", handleScroll);
@@ -566,7 +599,7 @@ function Services() {
               id="micro"
             >
               <div className="my-5 text-white softtest mb-5" id="softtest">
-                <div className="p-5">
+                {/* <div className="p-5"> */}
                   <div className=" position-relative z-3">
                     <h1
                       className="primary-header mb-4"
@@ -643,7 +676,7 @@ function Services() {
                   </div>
                 </div>
               </div>
-            </div>
+            {/* </div> */}
           </div>
 
           <div
@@ -713,6 +746,7 @@ function Services() {
               >
                 <span>Microservices Architecture and Engineering</span>
               </button>
+              
               <Link to="/" className="service-hover-nav" data-aos="fade">
                 <span>Home</span>
               </Link>

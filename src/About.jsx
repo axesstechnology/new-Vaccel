@@ -22,7 +22,7 @@ function About() {
 
 <div className='hero-banner hero-2 mt-5' data-aos='fade'>
                  <div className='container text-center green-text'>
-                     <p className="bg-img-2 mb-5 mx-auto" data-aos='fade-up' data-aos-duration='400'>About Us</p>
+                     <p className="bg-img-2 mb-5 mx-auto" data-aos='fade-up' data-aos-duration='400'>Our Team</p>
                      <h1 className={`secondary-header mb-3`} data-aos='fade-up' data-aos-duration='600'>V-Accel : Weaving Digital Successes for 8 Years</h1>
                      {/* <p className='mb-0 secondary-text mb-3' data-aos='fade-up' data-aos-duration='700'>{h3}</p> */}
                          <Link to={"/contact"} className='text-decoration-none'>
@@ -99,7 +99,7 @@ function About() {
                 />
               </div>
               <p className="mt-3 ceo-content">
-                Founded by a passionate entrepreneur, Mr. Venkteshan, V-Accel 
+                Founded by a passionate entrepreneur, Mr. Venkatesan, V-Accel 
                 AI Dynamics has been igniting digital dreams for the past eight
                 years. We're not just tech wizards; we're your collaborators,
                 crafting custom solutions that propel your brand forward. From
@@ -109,7 +109,7 @@ function About() {
                 applications, and our sharp-eyed testers ensure every click is
                 glitch-free. We don't stop there; our digital marketing maestros
                 orchestrate campaigns that drive engagement and conversions,
-                turning clicks into loyal customers. At Axess, your success is
+                turning clicks into loyal customers. At V-Accel, your success is
                 our compass. We believe in building long-term partnerships,
                 walking hand-in-hand with our clients, understanding their
                 aspirations, and tailoring solutions that fit their unique
