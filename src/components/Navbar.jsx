@@ -98,7 +98,7 @@ function Navbar() {
   <img 
     src={vlogo} 
     alt="Logo" 
-    style={{ width: '80px', height: '110px', objectFit: 'contain' }} 
+    style={{ width: '100px', height: '110px', objectFit: 'contain' }} 
   />
 </div>
 
