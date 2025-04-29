@@ -12,7 +12,7 @@ import Techsection from '../components/Techsection';
 import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
 import Development from './Development';
-import bannerimg from '../assets/images/hero-banner.webp';
+import bannerimg from '../assets/images/homeimg.png';
 export default function Home() {
     let nav = useNavigate()
 
@@ -57,7 +57,7 @@ export default function Home() {
             <Industries/>
             {/* <Carousel head={"Our Works"}/> */}
             <Footer/>
-            
+        
         </section>
     )
 }
