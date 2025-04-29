@@ -130,7 +130,7 @@ function Development() {
             </div> */}
             
             <div className="row mt-5" data-aos="fade-up" data-aos-duration="800">
-  <div 
+  {/* <div 
     className="d-flex flex-wrap justify-content-center" 
     style={{ columnGap: '2%', rowGap: '30px' }} // spacing between cards
   >
@@ -152,11 +152,32 @@ function Development() {
           </div>
         </div>
 
-        {/* Line break after 5th card */}
+         Line break after 5th card}
         {index === 4 && <div className="w-100" />}
       </React.Fragment>
     ))}
-  </div>
+  </div> */}
+
+  <div className="row mt-5" data-aos="fade-up" data-aos-duration="800">
+  {techCards.map((card, index) => (
+    <div
+      key={index}
+      className="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 d-flex justify-content-center"
+      data-aos="fade-up"
+      data-aos-duration={600 + index * 50}
+      data-aos-easing="ease-in-back"
+    >
+      <div className="card boxshadow small-card text-center h-100 w-100">
+        <div className="py-3 secondary-text">
+          <p className="fw-bold">{card.title}</p>
+          {card.technologies.map((tech, i) => (
+            <p key={i} className="mb-1">{tech}</p>
+          ))}
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
 </div>
 
           

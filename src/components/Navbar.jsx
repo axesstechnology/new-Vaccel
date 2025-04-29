@@ -94,14 +94,13 @@ function Navbar() {
 <div className="container-fluid px-4">
   <div className="row align-items-center">
     {/* Logo at top left */}
-    <div className="col-6 col-lg-2 d-none d-lg-flex justify-content-start align-items-center">
-  <img 
-    src={vlogo} 
-    alt="Logo" 
-    style={{ width: '100px', height: '110px', objectFit: 'contain' }} 
-  />
-</div>
-
+    <div className="col-6 col-lg-2 d-flex justify-content-start align-items-center">
+      <img 
+        src={vlogo} 
+        alt="Logo" 
+        style={{ width: '100px', height: '110px', objectFit: 'contain' }} 
+      />
+    </div>
 
     {/* Centered heading */}
 
