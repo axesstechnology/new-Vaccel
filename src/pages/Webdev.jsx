@@ -100,7 +100,7 @@ function Development() {
       <div className='hero-banner hero-2 mt-5' data-aos='fade'>
         
         <div className='container text-center green-text'>
-            <p className="bg-img-2 mb-5 mx-auto" data-aos='fade-up' data-aos-duration='400'>AI & ML Engineering</p>
+            <p className="bg-img-2 mb-3 mx-auto" data-aos='fade-up' data-aos-duration='400'>AI & ML Engineering</p>
             <h1 className={`secondary-header mb-3 ${isContactPage?'mb-5 pb-5':''}`} data-aos='fade-up' data-aos-duration='600'>Crafting Websites that Captivate and Convert</h1>
             {/* <p className='mb-0 secondary-text mb-3' data-aos='fade-up' data-aos-duration='700'>Revolutionize Your Operations: Transform with Software Tailored to Your Needs.</p> */}
             
@@ -129,7 +129,7 @@ function Development() {
                 </div>
             </div> */}
             
-            <div className="row mt-5" data-aos="fade-up" data-aos-duration="800">
+            <div className="row mt-5 mb-5" data-aos="fade-up" data-aos-duration="800">
   <div 
     className="d-flex flex-wrap justify-content-center" 
     style={{ columnGap: '2%', rowGap: '30px' }} // spacing between cards
@@ -143,7 +143,7 @@ function Development() {
           data-aos-easing="ease-in-back"
         >
           <div className="card boxshadow small-card text-center h-100">
-            <div className="py-3 secondary-text">
+            <div className="py-1 secondary-text">
               <p className="fw-bold">{card.title}</p>
               {card.technologies.map((tech, i) => (
                 <p key={i} className="mb-1">{tech}</p>
