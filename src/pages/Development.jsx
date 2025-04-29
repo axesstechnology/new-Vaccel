@@ -923,7 +923,7 @@ function Development() {
                                 <div className="my-3 border"></div>
                                 <div className="seperator"></div>
                                 <p className="description heading5">
-                                  From scrappy startup to industry leader, Axess
+                                  From scrappy startup to industry leader, V-Accel
                                   helped us scale with custom software that
                                   empowers our team and delights our customers.
                                   They truly understood our vision and
@@ -1055,7 +1055,7 @@ function Development() {
                                 <div className="my-3 border"></div>
                                 <div className="seperator"></div>
                                 <p className="description heading5">
-                                  Axess went above and beyond to develop a
+                                  V-Accel went above and beyond to develop a
                                   complex enterprise software solution that met
                                   all our regulatory requirements and security
                                   needs. Their collaborative approach and
@@ -1187,7 +1187,7 @@ function Development() {
                                 <div className="seperator"></div>
                                 <p className="description heading5">
                                   We were struggling with outdated software that
-                                  hindered our growth. Axess modernized our
+                                  hindered our growth. V-Accel modernized our
                                   entire system, boosting productivity and
                                   streamlining operations. The ROI has been
                                   incredible!{" "}
@@ -1318,7 +1318,7 @@ function Development() {
                                 <div className="seperator"></div>
                                 <p className="description heading5">
                                   "From bootstrapped startup to industry leader,
-                                  Axess propelled us forward with custom
+                                  V-Accel propelled us forward with custom
                                   software that empowers our team and delights
                                   our customers. Their team truly understood our
                                   vision and translated it into a seamless,
@@ -1450,7 +1450,7 @@ function Development() {
                                 <div className="my-3 border"></div>
                                 <div className="seperator"></div>
                                 <p className="description heading5">
-                                  "Axess went the extra mile to develop a
+                                  "V-Accel went the extra mile to develop a
                                   complex enterprise software solution that met
                                   all our regulatory requirements and security
                                   needs. Their collaborative approach and
