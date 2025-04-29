@@ -116,10 +116,11 @@ function Navbar() {
   </div>
 </div> */}
 <div className="col-lg-8 d-none d-lg-flex justify-content-center">
-  <div className="d-flex align-items-center">
-    <p className="mb-0" style={{ fontSize: '48px', fontWeight: '700', whiteSpace: 'nowrap', letterSpacing: '4px', color: '#1f4051' }}>
-      V<span style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}>-</span>Accel AI Dynamics
+  <div className="d-flex flex-column align-items-center justify-content-center text-center">
+    <p style={{ fontSize: '52px', fontWeight: '900', whiteSpace: 'nowrap', letterSpacing: '4px', color: '#1f4051' }}>
+      V<span style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}>-</span>Accel
     </p>
+    <p className="fs-2 mb-0 ">We Accelerate AI Dynamics</p>
   </div>
 </div>
 
