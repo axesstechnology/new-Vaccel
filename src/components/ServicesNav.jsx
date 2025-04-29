@@ -52,7 +52,7 @@ function Navbar() {
 
 
   return (
-    <div>
+    <div className='positon-relative sticky-top'>
       {/* Upper Navigation */}
       <div className='d-flex py-3 py-lg-0 justify-content-between bg-white justify-content-lg-around align-items-center upper-nav border-bottom container-fluid flex-wrap' data-aos='fade-down' data-aos-duration='500'>
         {/* <div className='d-flex share order-2 order-lg-1 '>
@@ -185,9 +185,9 @@ function Navbar() {
                 </li>
 
                 <li className="nav-item position-relative">
-                  <NavLink  className="nav-link navhover" to={'/services'} onClick={() => setValue(true)}>
+                  <Link to="#" className="nav-link navhover">
                     Services
-                  </NavLink>
+                  </Link>
                   <div className="drop">
                     <div className='nav-item'>
                       <NavLink to={'/services'} activeclassname="active" className="nav-link navhover" aria-current="page" >All Services</NavLink>
