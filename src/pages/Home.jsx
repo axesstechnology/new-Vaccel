@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 import '../assets/css/home.scss'
 import Svg1 from '../components/Svg1';
-import pulse from '../assets/images/bubble.webp';
+import pulse from '../assets/images/bubble.png';
 import Solutions from '../components/Solutions';
 import Award from '../components/Award';
 import Footer from '../components/Footer';
