@@ -12,7 +12,9 @@ import Techsection from '../components/Techsection';
 import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
 import Development from './Development';
-import bannerimg from '../assets/images/hero-banner.webp';
+import bannerimg from '../assets/images/homeimg.png';
+import Awardimg from '../assets/images/Award-img1.png'
+
 export default function Home() {
     let nav = useNavigate()
 
