@@ -8,7 +8,7 @@ export default function SoftwareDev() {
     return (
         <div>
             {/* Banner img */}
-            <Banner h1='Software Development ' h2='Explain The Benefits Of Automation Testing' h3='Describe our testing methodology and tools' />
+            <Banner h1=' Software Development ' h2='Explain The Benefits Of Automation Testing' h3='Describe our testing methodology and tools' />
 
             <section>
                 

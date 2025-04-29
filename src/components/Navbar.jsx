@@ -103,13 +103,34 @@ function Navbar() {
     </div>
 
     {/* Centered heading */}
-   <div className="col-12 col-lg-8 d-flex justify-content-center">
+
+    {/* <div className="col-12 col-lg-8 d-none d-lg-flex justify-content-center">
+  <div className="d-flex align-items-center">
+    <p className="mb-0" style={{ fontSize: '48px', fontWeight: '700', whiteSpace: 'nowrap', letterSpacing: '4px', color: '#1f4051' }}>
+      V<span style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}>-</span>Accel AI Dynamics
+    </p>
+  </div>
+</div> */}
+<div className="col-lg-8 d-none d-lg-flex justify-content-center">
   <div className="d-flex align-items-center">
     <p className="mb-0" style={{ fontSize: '48px', fontWeight: '700', whiteSpace: 'nowrap', letterSpacing: '4px', color: '#1f4051' }}>
       V<span style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}>-</span>Accel AI Dynamics
     </p>
   </div>
 </div>
+
+
+
+
+   
+
+   {/* <div className="col-12 col-lg-8 d-flex justify-content-center">
+  <div className="d-flex align-items-center">
+    <p className="mb-0" style={{ fontSize: '48px', fontWeight: '700', whiteSpace: 'nowrap', letterSpacing: '4px', color: '#1f4051' }}>
+      V<span style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}>-</span>Accel AI Dynamics
+    </p>
+  </div>
+</div> */}
 
 
     {/* Empty column for spacing/alignment on larger screens */}
@@ -130,7 +151,7 @@ function Navbar() {
           <div className="container-fluid">
             <div className="d-lg-none d-flex justify-content-between align-items-center w-100 py-2 align-items-end upper-nav">
               <Link to='/' className="navbar-brand col-1">
-                <img src={logo} alt="" />
+                <img src={vlogo} alt="" />
               </Link>
               <p className="secondary-text m-0 text-center" onClick={()=>navigation("/")}>V-Accel</p>
               <button
@@ -160,7 +181,7 @@ function Navbar() {
                 </li>
 
                 <li className="nav-item position-relative">
-                  <Link className="nav-link navhover" >
+                  <Link to="#" className="nav-link navhover">
                     Services
                   </Link>
                   <div className="drop">

@@ -23,9 +23,8 @@ function Award() {
                     <div className='row g-3 mb-5'>
                         <div className='col-md-6'>
                             <div className='card h-100' data-aos='fade-up' data-aos-duration='400'>
-                                <p className='py-2 mb-0 d-flex'><i className="bi bi-check-circle-fill m-0 px-4 ps-lg-3 pe-lg-5 h-100"></i>8+ Years of Expertise</p>
 
-                                <p className='py-2 mb-0 d-flex'><i className="bi bi-check-circle-fill m-0 px-4 ps-lg-3 pe-lg-5 h-100"></i>8 Years of Expertise</p>
+                                <p className='py-2 mb-0 d-flex'><i className="bi bi-check-circle-fill m-0 px-4 ps-lg-3 pe-lg-5 h-100"></i>8+ Years of Expertise</p>
                             </div>
                         </div>
                         <div className="col-md-6">
