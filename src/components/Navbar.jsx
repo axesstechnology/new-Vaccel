@@ -103,7 +103,7 @@ function Navbar() {
     </div>
 
     {/* Centered heading */}
-   =<div className="col-12 col-lg-8 d-flex justify-content-center">
+   <div className="col-12 col-lg-8 d-flex justify-content-center">
   <div className="d-flex align-items-center">
     <p className="mb-0" style={{ fontSize: '48px', fontWeight: '700', whiteSpace: 'nowrap', letterSpacing: '4px', color: '#1f4051' }}>
       V<span style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}>-</span>Accel AI Dynamics
@@ -180,7 +180,7 @@ function Navbar() {
                       <NavLink to={'/digitalmarketing'} activeclassname="active" className="nav-link navhover" aria-current="page" >DevOps & Cloud Engineering</NavLink>
                     </div>
                     <div className='nav-item'>
-                      <NavLink to={'/digitalmarketing'} activeclassname="active" className="nav-link navhover" aria-current="page" >Microservices Architecture & Engineering</NavLink>
+                      <NavLink to={'/micro-services'} activeclassname="active" className="nav-link navhover" aria-current="page" >Microservices Architecture & Engineering</NavLink>
                     </div>
                   </div>
                 </li>
