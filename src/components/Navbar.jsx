@@ -95,11 +95,15 @@ function Navbar() {
   <div className="row align-items-center">
     {/* Logo at top left */}
     <div className="col-6 col-lg-2 d-none d-lg-flex justify-content-start align-items-center">
-  <img 
+      <Link to='/' className="navbar-brand">
+        <img src={vlogo} alt="" style={{ width: '100px', height: '110px', objectFit: 'contain'}} />
+      </Link>
+  {/* <img 
     src={vlogo} 
     alt="Logo" 
     style={{ width: '100px', height: '110px', objectFit: 'contain' }} 
-  />
+  /> */}
+
 </div>
 
 
