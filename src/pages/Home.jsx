@@ -55,7 +55,7 @@ export default function Home() {
             <Solutions/>
             <Techsection/>
             <Industries/>
-            <Carousel head={"Our Works"}/>
+            {/* <Carousel head={"Our Works"}/> */}
             <Footer/>
             
         </section>
