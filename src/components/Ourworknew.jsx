@@ -152,7 +152,7 @@ export default function Ourworknew() {
                     ))}
                 </div>
             </div>
-            <Carousel head={"Related Works"} />
+            {/* <Carousel head={"Related Works"} /> */}
             <Footer />
         </div>
     );
