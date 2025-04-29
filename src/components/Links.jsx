@@ -4,18 +4,45 @@ import React, { useEffect, useState } from 'react'
 export default function Links() {
 
   const [hover, setHover] = useState('');
+  
 
-  function setcolorfunctoin(color) {
-    if (color == 'whatsappcolor') {
-      setHover('whatsappcolor');
-    } else if (color == 'instagramcolor') {
-      setHover('instagramcolor');
-    } else if (color == 'facebookcolor') {
-      setHover('facebookcolor');
-    } else if (color == 'linkedincolor') {
-      setHover('linkedincolor');
+
+  // function setcolorfunctoin(color) {
+  //   if (color == 'whatsappcolor') {
+  //     setHover('whatsappcolor');
+  //   } else if (color == 'facebookcolor') {
+  //     setHover('facebookcolor');
+  //   } else if (color == 'instagramcolor') {
+  //     setHover('instagramcolor');
+  //   } 
+  //   //  else if (color == 'linkedincolor') {
+  //   //   setHover('linkedincolor');
+  //   // }
+  // }
+  const setcolorfunctoin = (color) => {
+    setHover(color);
+  };
+
+    // Styles for hover effects
+    const getIconStyle = (iconType) => {
+      let baseStyle = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        transition: 'all 0.3s ease',
+      };
+
+       // Add highlight effect when hovered
+    if (hover === iconType) {
+      return {
+        ...baseStyle,
+        boxShadow: '0 0 15px rgba(0, 0, 0, 0.15)',
+        transform: 'scale(1.1)',
+      };
     }
-  }
+    
+    return baseStyle;
+  };
 
   const [scrollClass, setScrollClass] = useState('');
 
@@ -43,7 +70,7 @@ export default function Links() {
   }, []);
 
   return (
-    <div className={`${scrollClass} links-container row align-items-center text-white ${hover}`}>
+    <div style={{ backgroundColor: 'white', color: 'black' }} className={`${scrollClass} links-container row align-items-center text-white ${hover}`}>
       <div className="col-4">
         <a href='https://wa.me/+918754453361' target='_blank' className="d-flex justify-content-center text-decoration-none text-white"
           onMouseEnter={() => setcolorfunctoin('whatsappcolor')}
@@ -53,31 +80,31 @@ export default function Links() {
               <i className="bi bi-whatsapp"></i>
             </div>
           </div>
-          <p className='mb-0 ms-5 d-none d-lg-block px-2'>V-Accel</p>
+          <p className='mb-0 ms-5 d-none d-lg-block px-2'>Whatsapp</p>
         </a>
       </div>
       <div className="col-4">
         <a href="tel:+918754453361" target='_blank' className="d-flex justify-content-center text-decoration-none text-white"
-          onMouseEnter={() => setcolorfunctoin('whatsappcolor')}
+          onMouseEnter={() => setcolorfunctoin('blue')}
           onMouseLeave={() => setHover('')}>
           <div className="position-relative">
             <div className="icons phone">
               <i className="bi bi-phone"></i>
             </div>
           </div>
-          <p className='mb-0 ms-5 d-none d-lg-block px-2'>V-Accel</p>
+          <p className='mb-0 ms-5 d-none d-lg-block px-2'>Phone</p>
         </a>
       </div>
       <div className="col-4">
         <a href={`mailto:info@v-accel.ai`} target='_blank' className="d-flex justify-content-center text-decoration-none text-white"
-          onMouseEnter={() => setcolorfunctoin('whatsappcolor')}
+          onMouseEnter={() => setcolorfunctoin('white')}
           onMouseLeave={() => setHover('')}>
           <div className="position-relative">
             <div className="icons mail">
               <i className="bi bi-envelope"></i>
             </div>
           </div>
-          <p className='mb-0 ms-5 d-none d-lg-block px-2'>V-Accel</p>
+          <p className='mb-0 ms-5 d-none d-lg-block px-2'>Mail</p>
         </a>
       </div>
       {/* <div className="col-3">
