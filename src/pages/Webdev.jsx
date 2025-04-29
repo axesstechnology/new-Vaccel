@@ -315,7 +315,7 @@ function Development() {
         </div>
       </section>
 
-      <Carousel />
+      {/* <Carousel /> */}
 
       <div className="bg-green-1 text-light">
         <section className="container mt-5">

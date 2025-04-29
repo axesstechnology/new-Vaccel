@@ -53,7 +53,7 @@ function Testing() {
               technologies: ["Stripe", "Razorpay.js", "PayPal APIs"]
           },
           {
-              title: "Authentication/ SSO",
+              title: "Authentication /SSO",
               technologies: ["Auth0", "Firebase Auth","Keycloak"]
           },
           {
