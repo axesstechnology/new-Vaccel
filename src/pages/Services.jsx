@@ -13,7 +13,11 @@ import AOS from "aos";
 import vlogo from "../assets/images/V Logo.png";
 import saas from "../assets/saas.gif";
 import cloud from '../assets/cloud.gif';
-import saasp from '../assets/saasp.gif';
+import saasp from '../assets/saasp.png';
+import csd from "../assets/csd.png";
+import micro from "../assets/micro.png";
+import Navbar from "../components/Navbar";
+import ServicesNav from "../components/ServicesNav";
 
 function Services() {
   const [nav, setNav] = useState(false);
@@ -176,6 +180,8 @@ function Services() {
   window.addEventListener("scroll", handleScroll);
 
   return (
+    <div> 
+      <ServicesNav />
     <div className="services">
       <div className="layer-one">
         <div className="row">
@@ -271,7 +277,7 @@ function Services() {
               </div>
             </div>
             <div className="my-5 roller-container softdev" id="softdev">
-              <div className="min-vh-100 d-flex flex-column h-100 text-white justify-content-center p-5">
+              {/* <div className="min-vh-100 d-flex flex-column h-100 text-white justify-content-center p-5">
                 <div className=" position-relative z-3">
                   <h1
                     className="primary-header mb-4"
@@ -339,7 +345,7 @@ function Services() {
                     services and let us orchestrate your digital masterpiece.
                   </p>
 
-                  {/* Bullet points section */}
+                  
                   <ul
                     className="primary-text mb-4 text-white"
                     data-aos="fade-up"
@@ -364,6 +370,107 @@ function Services() {
                     <i className="bi bi-arrow-right"></i>
                   </Link>
                 </div>
+              </div> */}
+            </div>
+            <div className="my-5 text-white softtest mb-5" id="softtest">
+              <div className="p-5">
+                <div className=" position-relative z-3">
+                  <h1
+                    className="primary-header mb-4"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                     Custom Software Development
+                  </h1>
+                  <div className="row align-items-center">
+                    <div className="col-md-8">
+                      <h4
+                        className="mt-4 mb-4"
+                        data-aos="fade-up"
+                        data-aos-duration="600"
+                        data-aos-anchor-placement="bottom-bottom"
+                      >
+                        We Don’t Just Build Software — We Orchestrate Digital Masterpieces.
+                      </h4>
+                      
+                      <h4
+                        className="primary-text mb-3"
+                        data-aos="fade-up"
+                        data-aos-duration="300"
+                        data-aos-anchor-placement="bottom-bottom"
+                      >
+                       Why juggle multiple vendors for UI, backend, and deployment?
+                      </h4>
+                      <p
+                        className="primary-text mb-3"
+                        data-aos="fade-up"
+                        data-aos-duration="600"
+                        data-aos-anchor-placement="bottom-bottom"
+                      >
+                      Think of us as your tech orchestra — with frontend, backend, DevOps, and AI playing in sync.
+                      <br />
+                      <br />
+                      We replace scattered teams and misaligned timelines with a full-stack symphony that moves fast, builds smart, and scales right.
+Let go of the chaos. Let us harmonize your innovation.
+                      </p>
+                      
+                    </div>
+                    
+                    <div className="col-md-4">
+                      <img
+                        src={csd}
+                        className="w-100 animatedimg"
+                        alt="service"
+                        data-aos="zoom-in"
+                        data-aos-duration="600"
+                        data-aos-anchor-placement="bottom-bottom"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Add bullet points here */}
+                  <p
+                    className="primary-text mt-4 mb-5 text-white"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                  >
+                     <p className="mb-2 ">⚡ Rapid MVP Prototyping</p>
+                    <p className="mb-2">🌐 Web and Mobile Apps</p>
+                    <p className="mb-2">
+                      🧩 API Integrations & Microservices
+                    </p>
+                    <p className="mb-2">☁️ Cloud-native Development</p>
+                  </p>
+
+                  {/* <h1 className='text-center primary-header mb-5' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">Software Testing Life Cycle</h1> */}
+                  {/* Rest of the content remains unchanged */}
+
+                  {/* At the end, right before the Link component */}
+                  <div className="d-flex justify-content-center gap-3">
+                  <Link
+                    to={"/contact"}
+                    className="gold-btn"
+                    data-aos="fade"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <span className="d-block">“ Let’s Build Your Digital Symphony ”</span>{" "}
+                    <i className="bi bi-arrow-right"></i>
+                  </Link>
+
+                  <Link
+                    to={"/development"}
+                    className="gold-btn"
+                    // data-aos="fade"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <span className="d-block">Know More</span>{" "}
+                    <i className="bi bi-arrow-right"></i>
+                  </Link>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -387,7 +494,7 @@ function Services() {
                         data-aos-duration="600"
                         data-aos-anchor-placement="bottom-bottom"
                       >
-                        Transforming Ideas into SaaS Powerhouses
+                        We Transform SaaS Ideas Into Scalable Powerhouses
                       </h4>
                       <p
                         className="primary-text mb-3"
@@ -395,9 +502,7 @@ function Services() {
                         data-aos-duration="600"
                         data-aos-anchor-placement="bottom-bottom"
                       >
-                        We specialize in crafting multi-tenant, AI-driven SaaS
-                        products that scale seamlessly and deliver premium user
-                        experiences.
+                       From concept to cloud, we engineer robust, multi-tenant SaaS platforms that scale with precision and deliver unforgettable user experiences.
                       </p>
                     </div>
                     
@@ -414,37 +519,50 @@ function Services() {
                   </div>
 
                   {/* Add bullet points here */}
-                  <ul
+                  <p
                     className="primary-text mt-4 mb-5 text-white"
                     data-aos="fade-up"
                     data-aos-duration="600"
                   >
-                    <li className="mb-2">🚀 SaaS MVP to Enterprise Launch</li>
-                    <li className="mb-2">
+                    <p className="mb-2">🚀 MVP to Enterprise SaaS Rollout</p>
+                    <p className="mb-2">
                       🔐 SSO, Subscription, and Payment Integrations
-                    </li>
-                    <li className="mb-2">
+                    </p>
+                    <p className="mb-2">
                       📈 Built-in Analytics & Real-time Insights
-                    </li>
-                    <li className="mb-2">
-                      ☁️ Cloud-optimized Deployments (AWS, GCP)
-                    </li>
-                  </ul>
+                    </p>
+                    <p className="mb-2">
+                    ☁️ AWS/GCP Cloud-Native Architecture
+                    </p>
+                  </p>
 
                   {/* <h1 className='text-center primary-header mb-5' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">Software Testing Life Cycle</h1> */}
                   {/* Rest of the content remains unchanged */}
 
                   {/* At the end, right before the Link component */}
+                  <div className="d-flex justify-content-center gap-3">
+                  <Link
+                    to={"/contact"}
+                    className="gold-btn"
+                    data-aos="fade"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <span className="d-block">“ Launch Your SaaS Now ”</span>{" "}
+                    <i className="bi bi-arrow-right"></i>
+                  </Link>
+
                   <Link
                     to={"/testing"}
                     className="gold-btn"
-                    data-aos="fade"
+                    // data-aos="fade"
                     data-aos-duration="600"
                     data-aos-anchor-placement="bottom-bottom"
                   >
                     <span className="d-block">Know More</span>{" "}
                     <i className="bi bi-arrow-right"></i>
                   </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -473,7 +591,7 @@ function Services() {
                         data-aos-duration="600"
                         data-aos-anchor-placement="bottom-bottom"
                       >
-                        Crafting AI Solutions that Think, Predict, and Empower
+                      Building Smarter Systems with AI that Learns, Adapts, and Delivers.
                       </h4>
                       <p
                         className="primary-text mb-0"
@@ -481,8 +599,7 @@ function Services() {
                         data-aos-duration="600"
                         data-aos-anchor-placement="bottom-bottom"
                       >
-                        From custom LLMs to intelligent automation, we unlock
-                        the potential of AI to supercharge your business.
+                        From fine-tuned LLMs to AI-driven automations, we build intelligent solutions that drive decisions, automate processes, and redefine user experiences.
                       </p>
                     </div>
                     <div
@@ -498,30 +615,45 @@ function Services() {
                       />
                     </div>
                      {/* Bullet points section */}
-                  <ul
+                  <p
                     className="primary-text mb-4 text-white"
                     data-aos="fade-up"
                     data-aos-duration="600"
                   >
-                    <li className="mb-2"> 🧠 Generative AI & Custom Chatbots</li>
-                    <li className="mb-2">📊 Predictive Analytics & Insights</li>
-                    <li className="mb-2">
-                    🔗 Vector Databases & AI Integrations
-                    </li>
-                    <li className="mb-2">🎥 Multimodal AI (Text, Image, Video)</li>
-                  </ul>
+                    <p className="mb-2">🤖 Custom AI Agents & Conversational Bots</p>
+                    <p className="mb-2">📈 Predictive Analytics & Business Forecasting</p>
+                    <p className="mb-2">
+                    🧠 LLM Fine-tuning + Vector Search Integrations
+                    </p>
+                    <p className="mb-2">🎥 Multimodal AI (Text + Image + Voice)</p>
+                  </p>
                   </div>
                   <br></br>
+                  
+                  <div className="d-flex justify-content-center gap-3">
+                  <Link
+                    to={"/contact"}
+                    className="gold-btn"
+                    data-aos="fade"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <span className="d-block">“ Launch Your SaaS Now ”</span>{" "}
+                    <i className="bi bi-arrow-right"></i>
+                  </Link>
+
                   <Link
                     to={"/webdevelopment"}
                     className="gold-btn"
-                    data-aos="fade"
+                    // data-aos="fade"
                     data-aos-duration="600"
                     data-aos-anchor-placement="bottom-bottom"
                   >
                     <span className="d-block">Know More</span>{" "}
                     <i className="bi bi-arrow-right"></i>
                   </Link>
+                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -547,7 +679,7 @@ function Services() {
                         data-aos-duration="600"
                         data-aos-anchor-placement="bottom-bottom"
                       >
-                        Scaling Infrastructure, Accelerating Innovation
+                        Modern Cloud Engineering Built to Scale, Secure, and Ship Fast.
                       </h4>
                       <p
                         className="primary-text mb-4"
@@ -555,8 +687,7 @@ function Services() {
                         data-aos-duration="600"
                         data-aos-anchor-placement="bottom-bottom"
                       >
-                        We build resilient, scalable, and automated cloud
-                        architectures that power your growth at every stage.
+                        From CI/CD to serverless multicloud deployment, we help you build infrastructure that is automated, resilient, and ready for rapid innovation.
                       </p>
                     </div>
                     <div
@@ -572,31 +703,45 @@ function Services() {
                       />
                     </div>
                      {/* Bullet points section */}
-                  <ul
+                  <p
                     className="primary-text mb-4 text-white"
                     data-aos="fade-up"
                     data-aos-duration="600"
                   >
 
-                    <li className="mb-2">🛠️ CI/CD Pipelines & GitOps Deployments</li>
-                    <li className="mb-2">🐳 Containerization & Kubernetes Expertise</li>
-                    <li className="mb-2">
-                    ☁️ AWS, Azure, GCP Certified Engineers
-                    </li>
-                    <li className="mb-2">🔥 Serverless, Multi-Region Cloud Setups</li>
-                  </ul>
+                    <p className="mb-2">🛠️ End-to-End CI/CD & GitOps Deployments</p>
+                    <p className="mb-2">🐳 Kubernetes & Container Orchestration</p>
+                    <p className="mb-2">
+                    ☁️ Certified AWS, Azure, GCP Engineers
+                    </p>
+                    <p className="mb-2">🌐 Serverless & Multi-Region Cloud Scaling</p>
+                  </p>
                   </div>
                   <br></br>
+               
+                  <div className="d-flex justify-content-center gap-3">
+                  <Link
+                    to={"/contact"}
+                    className="gold-btn"
+                    data-aos="fade"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <span className="d-block">“ Launch Your SaaS Now ”</span>{" "}
+                    <i className="bi bi-arrow-right"></i>
+                  </Link>
+
                   <Link
                     to={"/digitalmarketing"}
                     className="gold-btn"
-                    data-aos="fade"
+                    // data-aos="fade"
                     data-aos-duration="600"
                     data-aos-anchor-placement="bottom-bottom"
                   >
                     <span className="d-block">Know More</span>{" "}
                     <i className="bi bi-arrow-right"></i>
                   </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -623,7 +768,7 @@ function Services() {
                           data-aos-duration="600"
                           data-aos-anchor-placement="bottom-bottom"
                         >
-                          Decoupling Complexity, Delivering Agility
+                          Engineered for Modularity. Built for Scale
                         </h4>
                         <p
                           className="primary-text mb-4"
@@ -631,8 +776,7 @@ function Services() {
                           data-aos-duration="600"
                           data-aos-anchor-placement="bottom-bottom"
                         >
-                          Design, build, and manage microservices architectures
-                          that scale reliably across distributed systems.
+                          We design, build, and manage microservices that enable rapid scaling, resilience, and agility for distributed systems — without the chaos.
                         </p>
                       </div>
                       <div className="col-md-4">
@@ -648,28 +792,28 @@ function Services() {
                     </div>
 
                     {/* Add bullet points here */}
-                    <ul
+                    <p
                       className="primary-text mt-4 mb-5 text-white"
                       data-aos="fade-up"
                       data-aos-duration="600"
                     >
-                      <li className="mb-2">
-                        ⚡ Event-Driven Microservices (Kafka)
-                      </li>
-                      <li className="mb-2">
-                        🔗 API Gateway & Service Mesh Setups
-                      </li>
-                      <li className="mb-2">🛡️ Secure, Resilient Systems</li>
-                      <li className="mb-2">
+                      <p className="mb-2">
+                      ⚡ Event-Driven Microservices with Kafka
+                      </p>
+                      <p className="mb-2">
+                      🔀 API Gateway & Service Mesh (Istio/Linkerd)
+                      </p>
+                      <p className="mb-2">🔐 Secure, Isolated Deployments</p>
+                      <p className="mb-2">
                         🏗️ Monolith-to-Microservices Migration Experts
-                      </li>
-                    </ul>
+                      </p>
+                    </p>
 
                     {/* <h1 className='text-center primary-header mb-5' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">Software Testing Life Cycle</h1> */}
                     {/* Rest of the content remains unchanged */}
 
                     {/* At the end, right before the Link component */}
-                    <Link
+                    {/* <Link
                       to={"/micro-services"}
                       className="gold-btn"
                       data-aos="fade"
@@ -678,7 +822,31 @@ function Services() {
                     >
                       <span className="d-block">Know More</span>{" "}
                       <i className="bi bi-arrow-right"></i>
-                    </Link>
+                    </Link> */}
+                     <div className="d-flex justify-content-center gap-3">
+                  <Link
+                    to={"/contact"}
+                    className="gold-btn"
+                    data-aos="fade"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <span className="d-block">“ Launch Your SaaS Now ”</span>{" "}
+                    <i className="bi bi-arrow-right"></i>
+                  </Link>
+
+                  <Link
+                    to={"/micro-services"}
+                    className="gold-btn"
+                    // data-aos="fade"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <span className="d-block">Know More</span>{" "}
+                    <i className="bi bi-arrow-right"></i>
+                  </Link>
+                  </div>
+
                   </div>
                 </div>
               </div>
@@ -753,7 +921,7 @@ function Services() {
                 <span>Microservices Architecture and Engineering</span>
               </button>
               
-              <Link to="/" className="service-hover-nav" data-aos="fade">
+              {/* <Link to="/" className="service-hover-nav" data-aos="fade">
                 <span>Home</span>
               </Link>
               <Link
@@ -769,11 +937,12 @@ function Services() {
                 data-aos="fade"
               >
                 <span>Contact</span>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
