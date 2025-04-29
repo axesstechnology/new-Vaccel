@@ -89,12 +89,12 @@ function Development() {
   <div className='hero-banner hero-2 mt-5' data-aos='fade'>
         
               <div className='container text-center green-text'>
-                  <p className="bg-img-2 mb-5 mx-auto" data-aos='fade-up' data-aos-duration='400'>Custom Software Development</p>
-                  <h1 className={`secondary-header mb-3 ${isContactPage?'mb-5 pb-5':''}`} data-aos='fade-up' data-aos-duration='600'>Revolutionize Your Operations: Transform with Software Tailored to Your Needs.</h1>
+                  <p className="bg-img-2 mb-3 mx-auto" data-aos='fade-up' data-aos-duration='400'>Custom Software Development</p>
+                  <h1 className={`secondary-header mb-2 ${isContactPage?'mb-5 pb-5':''}`} data-aos='fade-up' data-aos-duration='600'>Revolutionize Your Operations: Transform with Software Tailored to Your Needs.</h1>
                   {/* <p className='mb-0 secondary-text mb-3' data-aos='fade-up' data-aos-duration='700'></p> */}
                   
                   {/* Technology Expertise Cards */}
-                  <div className="row mt-5" data-aos='fade-up' data-aos-duration='800'>
+                  <div className="row mt-5 mb-4 " data-aos='fade-up' data-aos-duration='800'>
                       <div className="d-flex flex-wrap justify-content-between">
                           {techCards.map((card, index) => (
                               <div 

@@ -100,11 +100,11 @@ const Microservices = () => {
       <div className='hero-banner hero-2 mt-5' data-aos='fade'>
         
         <div className='container text-center green-text'>
-            <p className="bg-img-2 mb-5 mx-auto" data-aos='fade-up' data-aos-duration='400'>Microservices Architecture & Engineering</p>
+            <p className="bg-img-2 mb-3 mx-auto" data-aos='fade-up' data-aos-duration='400'>Microservices Architecture & Engineering</p>
             <h1 className={`secondary-header mb-3 ${isContactPage?'mb-5 pb-5':''}`} data-aos='fade-up' data-aos-duration='600'>Crafting Websites that Captivate and Convert</h1> 
             <div className="row mt-5" data-aos="fade-up" data-aos-duration="800">
   <div 
-    className="d-flex flex-wrap justify-content-center" 
+    className="d-flex flex-wrap justify-content-center mb-5" 
     style={{ columnGap: '2%', rowGap: '30px' }} // spacing between cards
   >
     {techCards.map((card, index) => (
