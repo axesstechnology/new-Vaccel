@@ -83,7 +83,7 @@ function Navbar() {
     <img 
       src={vlogo} 
       alt="Logo" 
-      style={{ width: '60px', height: '100px', objectFit: 'contain' }} 
+      style={{ width: '80px', height: '110px', objectFit: 'contain' }} 
     />
     <p className="mb-0" style={{ fontSize: '48px', fontWeight: '700', whiteSpace: 'nowrap', letterSpacing: '4px',color:'#1f4051' }}>
       AI Dynamics

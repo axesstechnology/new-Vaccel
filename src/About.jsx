@@ -99,7 +99,7 @@ function About() {
                 />
               </div>
               <p className="mt-3 ceo-content">
-                Founded by a passionate entrepreneur, Mr. Venkteshan, V-Accel 
+                Founded by a passionate entrepreneur, Mr. Venkatesan, V-Accel 
                 AI Dynamics has been igniting digital dreams for the past eight
                 years. We're not just tech wizards; we're your collaborators,
                 crafting custom solutions that propel your brand forward. From
@@ -109,7 +109,7 @@ function About() {
                 applications, and our sharp-eyed testers ensure every click is
                 glitch-free. We don't stop there; our digital marketing maestros
                 orchestrate campaigns that drive engagement and conversions,
-                turning clicks into loyal customers. At Axess, your success is
+                turning clicks into loyal customers. At V-Accel, your success is
                 our compass. We believe in building long-term partnerships,
                 walking hand-in-hand with our clients, understanding their
                 aspirations, and tailoring solutions that fit their unique
