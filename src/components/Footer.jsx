@@ -499,7 +499,7 @@ function Footer({ displayContact }) {
                     </form>
                 </div>
             </div>
-            <div className='bg-black text-white footercontent'>
+            {/* <div className='bg-black text-white footercontent'>
                 <div className='container'>
                     <div className="text-capitalize mt-5">
                         <div className="row align-items-center">
@@ -526,8 +526,8 @@ function Footer({ displayContact }) {
                             <p className='gold-text-2 fw-bolder'>V-Accel</p>    
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled'>
-                                    {/* <button onClick={handleRoute}>home</button> */}
-                                    {/* <li><Link to="/" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white' >Home</Link></li> */}
+                                    <button onClick={handleRoute}>home</button>
+                                    <li><Link to="/" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white' >Home</Link></li>
                                     <li><Link to="/about" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white footerhover'>About</Link></li>
                                     <li><Link to="/services" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white footerhover'>Services</Link></li>
                                     <li><Link to="/ourworks" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white footerhover'>Our Works</Link></li>
@@ -546,7 +546,7 @@ function Footer({ displayContact }) {
                                     <li><Link to="/micro-services" className='primary-text text-decoration-none text-white footerhover'>Microservices Architecture & Engineering</Link></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* <div className="col-md-4" data-aos='fade-up' data-aos-duration='700'>
                             <div>
@@ -560,28 +560,65 @@ function Footer({ displayContact }) {
                                 </ul>
                             </div>
                         </div> */}
-                    </div>
-                </div>
-                {/* <div className="container">
-                    <div className="row">
-                        <div className="row text-center text-md-start">
-                            <div className="col-md-6" data-aos='zoom-in-right' data-aos-anchor-placement="top-bottom" data-aos-duration='700'>
-                                <p className='fw-semibold fs-6'> <span className='gold-text-2'>Business Enquiry</span> <span className='primary-text'>: +91 93845 xxxxx</span></p>
-                            </div>
-                            <div className="col-md-6" data-aos='zoom-in-left' data-aos-anchor-placement="top-bottom" data-aos-duration='700'>
-                                <p className='fw-semibold fs-6 text-md-end'><span className='gold-text-2'>For Jobs</span><span className="primary-text"> : +91 93614 xxxxx</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
-                <hr className='m-0' />
-                <div className='text-center'>
-                    <p className='mb-0 py-3 primary-text text-decoration-none text-white last-child'>
-                        Copyright © All rights reserved 2025.<span className='d-block d-md-inline'>V - Accel</span> <Link className='footerhover text-decoration-none' to={"/privacypolicy"}> Privacy Policy </Link></p>
-                </div>
-            </div>
+<div className='bg-black text-white footercontent'>
+  <div className='container py-3'>
+    {/* Flexbox row for even spacing */}
+    <div className='row gx-5 d-flex align-items-start'>
+      <div className="col-12 col-md-4 d-flex justify-content-center mb-3 mb-md-0">
+        <img
+          src={footer}
+          className="img-fluid"
+          alt="footer-illustration"
+          style={{ maxHeight: '100px', objectFit: 'contain' }}
+        />
+      </div>
+      
+      <div className="col-6 col-md-4 d-flex flex-column pl-3 ps-md-5">
+        <p className='gold-text-2 fw-bold mb-2'>V-Accel</p>
+        <ul className='list-unstyled mb-0'>
+          <li><Link to="/about" className='text-white text-decoration-none footerhover'>About</Link></li>
+          <li><Link to="/services" className='text-white text-decoration-none footerhover'>Services</Link></li>
+          <li><Link to="/ourworks" className='text-white text-decoration-none footerhover'>Our Works</Link></li>
+          <li><Link to="/contact" className='text-white text-decoration-none footerhover'>Contact</Link></li>
+        </ul>
+      </div>
+      
+      <div className="col-6 col-md-4 d-flex flex-column">
+        <p className='gold-text-2 fw-bold mb-2'>Our Services</p>
+        <ul className='list-unstyled mb-0'>
+          <li><Link to="/development" className='text-white text-decoration-none footerhover'>Custom Software Development</Link></li>
+          <li><Link to="/testing" className='text-white text-decoration-none footerhover'>SaaS Product Development</Link></li>
+          <li><Link to="/webdevelopment" className='text-white text-decoration-none footerhover'>AI & ML Engineering</Link></li>
+          <li><Link to="/digitalmarketing" className='text-white text-decoration-none footerhover'>DevOps & Cloud Engineering</Link></li>
+          <li><Link to="/micro-services" className='text-white text-decoration-none footerhover'>Microservices Architecture</Link></li>
+        </ul>
+      </div>
+    </div>
+    
+    {/* Single-line Visit Us section with reduced top margin */}
+    <div className="row mt-4">
+      <div className="col-12 d-flex flex-wrap justify-content-center align-items-center text-center">
+        <span className='gold-text-2 fw-bold me-2'>Visit Us:</span>
+        <span className="text-white">Tidel Park, GF-04, No-4, Rajiv Gandhi Salai, Taramani, Chennai - 600113.</span>
+      </div>
+    </div>
+  </div>
+  
+  {/* Copyright section with reduced padding */}
+  <div className="copyright-section border-top border-secondary mt-2">
+    <div className="container py-2">
+      <div className="row">
+        <div className="col-12 text-center">
+          <small>Copyright © All rights reserved 2025.V - Accel 
+            <a href="/privacy-policy" className="text-primary ms-1">Privacy Policy</a>
+          </small>
         </div>
-    )
+      </div>
+    </div>
+  </div>
+</div>
+                    </div>
+    );
 }
 
 export default Footer

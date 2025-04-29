@@ -88,7 +88,7 @@ function About() {
         <div className=" pt-3 row justify-content-end">
           <div className="col-lg-8 order-2 order-lg-1">
             <div className="p-3 mx-2" data-aos="fade-right" data-aos-duration="1000">
-              <h1 className="mt-5 text-center bg-img-1 mx-auto">Our CEO</h1>
+              <h1 className="mt-5 text-center bg-img-1 mx-auto">About the Founder & CEO</h1>
               
               <div class="rounded-img d-lg-none">
                 <img
@@ -99,23 +99,11 @@ function About() {
                 />
               </div>
               <p className="mt-3 ceo-content">
-                Founded by a passionate entrepreneur, Mr. Venkatesan, V-Accel 
-                AI Dynamics has been igniting digital dreams for the past eight
-                years. We're not just tech wizards; we're your collaborators,
-                crafting custom solutions that propel your brand forward. From
-                the pixel-perfect world of website development to the rigorous
-                realm of software testing, we cover all bases. Our experienced
-                software developers weave lines of code into powerful
-                applications, and our sharp-eyed testers ensure every click is
-                glitch-free. We don't stop there; our digital marketing maestros
-                orchestrate campaigns that drive engagement and conversions,
-                turning clicks into loyal customers. At V-Accel, your success is
-                our compass. We believe in building long-term partnerships,
-                walking hand-in-hand with our clients, understanding their
-                aspirations, and tailoring solutions that fit their unique
-                needs. We're not just a service provider; we're your digital
-                co-pilot, navigating the ever-evolving landscape with expertise
-                and unwavering dedication.
+              Mr. Venkatesan J — Full-Stack Engineer | AI Specialist | Visionary Technologist
+With over 8+ years of hands-on experience in building high-performance applications and intelligent systems, Venkatesan leads V-Accel AI Dynamics with a unique blend of deep technical expertise and strategic vision.
+Holding a B.E. in Mechanical Engineering, a PGDM in Operations & Supply Chain, a PG Diploma in AI/ML, and an M.E. in Artificial Intelligence & Data Science, he bridges the gap between engineering, enterprise, and emerging technologies.
+As a Full-Stack Software Engineer (MERN) and a QA Automation Specialist, he has architected, tested, and scaled SaaS platforms, microservices ecosystems, and AI-powered products across industries.
+
               </p>
             </div>
           </div>
@@ -201,28 +189,29 @@ function About() {
           <div className="col-md-6 pt-4" data-aos="fade-left" data-aos-duration="1000">
             <div className="mt-3">
               <h6 className="secondary-header">
-                Here's a glimpse into our magic:
+              Today, he champions innovation in:
               </h6>
             </div>
             <div className="aboutpoints mt-3 pt-3">
               <ul>
                 <li>
-                  <strong>Software Development:</strong> We craft bespoke
+                  <strong> Custom Software Development & SaaS Engineering:</strong> We craft bespoke
                   applications that empower your business processes, enhance
                   efficiency, and streamline operations.
                 </li>
                 <li className="mt-4 pt-2">
-                  <strong>Software Testing:</strong> We leave no stone unturned,
+                  <strong>AI/ML Solutions (LLMs, Automation, Vector DBs):
+                  </strong> We leave no stone unturned,
                   ensuring your software is bug-free, reliable, and delivers a
                   seamless user experience.
                 </li>
                 <li className="mt-4 pt-2">
-                  <strong>Website Development:</strong> We create stunning,
+                  <strong>Software Testing (Manual + Automation + API):</strong> We create stunning,
                   user-friendly websites that are the perfect digital canvas for
                   your brand story.
                 </li>
                 <li className="mt-4 pt-2">
-                  <strong>Digital Marketing:</strong> We orchestrate data-driven
+                  <strong>DevOps, CI/CD, Cloud-native Deployment:</strong> We orchestrate data-driven
                   campaigns that ignite engagement, drive conversions, and build
                   lasting customer relationships.
                 </li>
@@ -235,8 +224,7 @@ function About() {
         <div className="container" data-aos="fade-up" data-aos-duration="1000">
           <h3 className="secondary-header mx-auto text-center text-white mb-2">
             <q>
-              Eight years of experience, countless success stories, and a
-              burning passion for digital excellence - that's V-Accel.
+            At V-Accel, he’s not just a founder — he's the lead problem-solver, code architect, and mentor behind every successful delivery.
             </q>
           </h3>
           <p className="col-md-8 fs-5 mx-auto text-center text-white mt-4">
