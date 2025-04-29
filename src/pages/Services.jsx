@@ -12,6 +12,9 @@ import digi from "../assets/images/services/digi.png";
 import AOS from "aos";
 import vlogo from "../assets/images/V Logo.png";
 import saas from "../assets/saas.gif";
+import cloud from '../assets/cloud.gif';
+import saasp from '../assets/saasp.gif';
+
 function Services() {
   const [nav, setNav] = useState(false);
   const [popup, setPopup] = useState(true);
@@ -217,14 +220,14 @@ function Services() {
                   className="d-flex justify-content-between align-items-center"
                   data-aos="fade-down"
                 >
-                  <Link
+                  {/* <Link
                     to={"/"}
                     className="display-6 fw-medium text-decoration-none text-white d-none d-md-block"
                   >
                     V-Accel
-                  </Link>
+                  </Link> */}
                   {/* <img src={vlogo} alt="logo" className="img-fluid logo" /> */}
-                  <button
+                  {/* <button
                     className={`navbar-toggler shadow-none border-0 hamburger hamburger--spring-r ${
                       nav && "is-active"
                     } d-block d-md-none`}
@@ -234,12 +237,12 @@ function Services() {
                     <span class="hamburger-box">
                       <span class="hamburger-inner"></span>
                     </span>
-                  </button>
+                  </button> */}
                 </div>
                 <div className="pattern d-none"></div>
-                {/* <h1 className='display-3 col-md-10 fw-bold text-white' data-aos="fade-up" data-aos-duration='700'>
-                                    The <span className='gold-text-2'>Axess</span> Technology Services
-                                </h1> */}
+                <h1 className='display-3 col-md-10 fw-bold text-white' data-aos="fade-up" data-aos-duration='700'>
+                                    The <span className='gold-text-2'><Link to={"/"} className=" gold-text-2 text-decoration-none">V-Accel</Link> </span> Services
+                                </h1>
                 <div
                   data-aos="fade-up"
                   data-aos-duration="700"
@@ -363,6 +366,8 @@ function Services() {
                 </div>
               </div>
             </div>
+
+
             <div className="my-5 text-white softtest mb-5" id="softtest">
               <div className="p-5">
                 <div className=" position-relative z-3">
@@ -385,7 +390,7 @@ function Services() {
                         Transforming Ideas into SaaS Powerhouses
                       </h4>
                       <p
-                        className="primary-text mb-0"
+                        className="primary-text mb-3"
                         data-aos="fade-up"
                         data-aos-duration="600"
                         data-aos-anchor-placement="bottom-bottom"
@@ -395,9 +400,10 @@ function Services() {
                         experiences.
                       </p>
                     </div>
+                    
                     <div className="col-md-4">
                       <img
-                        src={saas}
+                        src={saasp}
                         className="w-100 animatedimg"
                         alt="service"
                         data-aos="zoom-in"
@@ -544,7 +550,7 @@ function Services() {
                         Scaling Infrastructure, Accelerating Innovation
                       </h4>
                       <p
-                        className="primary-text mb-0"
+                        className="primary-text mb-4"
                         data-aos="fade-up"
                         data-aos-duration="600"
                         data-aos-anchor-placement="bottom-bottom"
@@ -560,7 +566,7 @@ function Services() {
                       data-aos-anchor-placement="bottom-bottom"
                     >
                       <img
-                        src={digi}
+                        src={cloud}
                         className="w-100 animatedimg"
                         alt="service"
                       />
@@ -620,7 +626,7 @@ function Services() {
                           Decoupling Complexity, Delivering Agility
                         </h4>
                         <p
-                          className="primary-text mb-0"
+                          className="primary-text mb-4"
                           data-aos="fade-up"
                           data-aos-duration="600"
                           data-aos-anchor-placement="bottom-bottom"
