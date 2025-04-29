@@ -86,7 +86,7 @@ function Development() {
         
       /> */}
 
-              <div className='hero-banner hero-2 mt-5' data-aos='fade'>
+  <div className='hero-banner hero-2 mt-5' data-aos='fade'>
         
               <div className='container text-center green-text'>
                   <p className="bg-img-2 mb-5 mx-auto" data-aos='fade-up' data-aos-duration='400'>Custom Software Development</p>
@@ -121,11 +121,9 @@ function Development() {
                 
               </div>
           </div>
-         
-         
-         <section className="bg-green-1 text-light">
-            <div className="pt-5 mt-5">
-           <div className="mt-0 pt-0 my-5 p-5 text-center text-white">
+       <section className="bg-green-1 text-light">
+        <div className="pt-5 mt-5">
+          <div className="mt-0 pt-0 my-5 p-5 text-center text-white">
             <h1
               className="secondary-header"
               data-aos="fade-up"
@@ -243,7 +241,172 @@ function Development() {
       </section>
       
 
-      
+      {/* <section className="container">
+        <div className="row mt-3 align-items-center justify-content-center ">
+          <div
+            className="col-lg-10 rounded-5  "
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <div className="text-center">
+              <p className="secondary-text mt-4">
+                In today's digital age, having robust and innovative software is
+                no longer a luxury, it's a necessity for businesses to thrive.
+                At Axess Technology, we understand the power of software and its
+                ability to transform your operations, streamline processes, and
+                unlock new opportunities for growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> */}
+    {/* <section className="bgcolor">
+  <div className="container py-4">
+    <div className="row mt-3">
+      <div className="col-12">
+        <div className="d-flex flex-wrap justify-content-between">
+          
+          <div 
+            className="mb-3" 
+            style={{width: '12%'}}
+            data-aos="fade-up" 
+            data-aos-duration="600" 
+            data-aos-easing="ease-in-back"
+          >
+            <div className="card boxshadow small-card text-center h-100">
+              <div className="py-4 secondary-text">
+                <p className="fw-bold">Frontend</p>
+                <p>React.js</p>
+                <p>Next.js</p>
+                <p>TailwindCSS</p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div 
+            className="mb-3" 
+            style={{width: '12%'}}
+            data-aos="fade-up" 
+            data-aos-duration="700" 
+            data-aos-easing="ease-in-back"
+          >
+            <div className="card boxshadow small-card text-center h-100">
+              <div className="py-4 secondary-text">
+                <p className="fw-bold">Backend</p>
+                <p>Node.js</p>
+                <p>Express.js</p>
+                <p>NestJS</p>
+              </div>
+            </div>
+          </div>
+
+         
+          <div 
+            className="mb-3" 
+            style={{width: '12%'}}
+            data-aos="fade-up" 
+            data-aos-duration="800" 
+            data-aos-easing="ease-in-back"
+          >
+            <div className="card boxshadow small-card text-center h-100">
+              <div className="py-4 secondary-text">
+                <p className="fw-bold">Mobile Apps</p>
+                <p>Flutter</p>
+                <p>React Native</p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div 
+            className="mb-3" 
+            style={{width: '12%'}}
+            data-aos="fade-up" 
+            data-aos-duration="900" 
+            data-aos-easing="ease-in-back"
+          >
+            <div className="card boxshadow small-card text-center h-100">
+              <div className="py-4 secondary-text">
+                <p className="fw-bold">APIs</p>
+                <p>REST</p>
+                <p>GraphQL</p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div 
+            className="mb-3" 
+            style={{width: '12%'}}
+            data-aos="fade-up" 
+            data-aos-duration="600" 
+            data-aos-easing="ease-in-back"
+          >
+            <div className="card boxshadow small-card text-center h-100">
+              <div className="py-4 secondary-text">
+                <p className="fw-bold">Database</p>
+                <p>MongoDB</p>
+                <p>PostgreSQL</p>
+                <p>MySQL</p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div 
+            className="mb-3" 
+            style={{width: '12%'}}
+            data-aos="fade-up" 
+            data-aos-duration="700" 
+            data-aos-easing="ease-in-back"
+          >
+            <div className="card boxshadow small-card text-center h-100">
+              <div className="py-4 secondary-text">
+                <p className="fw-bold">Cloud</p>
+                <p>AWS</p>
+                <p>Azure</p>
+              </div>
+            </div>
+          </div>
+
+         
+          <div 
+            className="mb-3" 
+            style={{width: '12%'}}
+            data-aos="fade-up" 
+            data-aos-duration="800" 
+            data-aos-easing="ease-in-back"
+          >
+            <div className="card boxshadow small-card text-center h-100">
+              <div className="py-4 secondary-text">
+                <p className="fw-bold">Authentication</p>
+                <p>JWT</p>
+                <p>OAuth2</p>
+              </div>
+            </div>
+          </div>
+
+          <div 
+            className="mb-3" 
+            style={{width: '12%'}}
+            data-aos="fade-up" 
+            data-aos-duration="900" 
+            data-aos-easing="ease-in-back"
+          >
+            <div className="card boxshadow small-card text-center h-100">
+              <div className="py-4 secondary-text">
+                <p className="fw-bold">Hosting</p>
+                <p>Vercel</p>
+                <p>AWS Elastic Beanstalk</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> */}
       <section className="bg-green-1 text-light mt-5">
         <div className="container">
           <div className=" pt-3">
@@ -444,6 +607,161 @@ function Development() {
      
 
       <Techsection />
+      {/* <section className="pricing mt-5" id="pricing-section">
+        <h1 className="primary-header text-center">Unlock Our New Features</h1>
+        <div className="container pricing-table">
+          <div className="pricing-card ">
+            <div className="shadow">
+              <h3 className="pricing-card-header">Basic</h3>
+              <div className="price text-center">
+                <sup>$</sup>15<span>/MO</span>
+              </div>
+              <ul>
+                <li>
+                  <strong>Domain</strong>- Additional Charges (Rs.800)
+                </li>
+                <li>
+                  <strong>Hosting - 1</strong> Year FREE
+                </li>
+                <li>
+                  <strong>Single 1 </strong> Page Website
+                </li>
+                <li>
+                  <strong>SSL</strong> Certificate
+                </li>
+                <li>
+                  <strong>WhatsApp </strong> Chat
+                </li>
+                <li>
+                  <strong>Social </strong> Media Integration
+                </li>
+                <li>
+                  <strong>Static </strong> Website
+                </li>
+                <li>
+                  <strong>Premade </strong> Website
+                </li>
+                <li>
+                  <strong>3 Month FREE </strong> Tech Support
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="pricing-card">
+            <h3 className="pricing-card-header">Pro</h3>
+            <div className="price text-center">
+              <sup>$</sup>30<span>/MO</span>
+            </div>
+            <ul>
+              <li>
+                <strong>Domain</strong>- Additional Charges (Rs.800)
+              </li>
+              <li>
+                <strong>Hosting - 1</strong> Year FREE
+              </li>
+              <li>
+                <strong>4 to 6</strong> Pages
+              </li>
+              <li>
+                <strong>WhatsApp</strong> Chat
+              </li>
+              <li>
+                <strong>SSL </strong> Certificate
+              </li>
+              <li>
+                <strong>Full Source </strong> Code
+              </li>
+              <li>
+                <strong>5 Email – 5GB </strong> Quota Each
+              </li>
+              <li>
+                <strong>Premade </strong> Website
+              </li>
+              <li>
+                <strong>3 Month FREE </strong> Tech Support
+              </li>
+            </ul>
+          </div>
+
+          <div className="pricing-card">
+            <h3 className="pricing-card-header">Premium</h3>
+            <div className="price text-center">
+              <sup>$</sup>50<span>/MO</span>
+            </div>
+            <ul>
+              <li>
+                <strong>Domain</strong>- Additional Charges (Rs.800)
+              </li>
+              <li>
+                <strong>Hosting - 1</strong> Year FREE
+              </li>
+              <li>
+                <strong>4 to 6</strong> Pages
+              </li>
+              <li>
+                <strong>WhatsApp</strong> Chat
+              </li>
+              <li>
+                <strong>SSL </strong> Certificate
+              </li>
+              <li>
+                <strong>Full Source </strong> Code
+              </li>
+              <li>
+                <strong>5 Email – 5GB </strong> Quota Each
+              </li>
+              <li>
+                <strong>Premade </strong> Website
+              </li>
+              <li>
+                <strong>3 Month FREE </strong> Tech Support
+              </li>
+            </ul>
+          </div>
+
+          <div className="pricing-card">
+            <h3 className="pricing-card-header">Elite</h3>
+            <div className="price text-center">
+              <sup>$</sup>80<span>/MO</span>
+            </div>
+            <ul>
+              <li>
+                <strong>Domain</strong>- Additional Charges (Rs.800)
+              </li>
+              <li>
+                <strong>Hosting - 1</strong> Year FREE
+              </li>
+              <li>
+                <strong>4 to 6</strong> Pages
+              </li>
+              <li>
+                <strong>WhatsApp</strong> Chat
+              </li>
+              <li>
+                <strong>SSL </strong> Certificate
+              </li>
+              <li>
+                <strong>Full Source </strong> Code
+              </li>
+              <li>
+                <strong>5 Email – 5GB </strong> Quota Each
+              </li>
+              <li>
+                <strong>Premade </strong> Website
+              </li>
+              <li>
+                <strong>3 Month FREE </strong> Tech Support
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="justify-content-center d-flex">
+          <a href="/contact" className="order-btn">
+            Order Now
+          </a>
+        </div>
+      </section> */}
 
       <Price/>
       <div>
@@ -605,7 +923,7 @@ function Development() {
                                 <div className="my-3 border"></div>
                                 <div className="seperator"></div>
                                 <p className="description heading5">
-                                  From scrappy startup to industry leader, V-Accel
+                                  From scrappy startup to industry leader, Axess
                                   helped us scale with custom software that
                                   empowers our team and delights our customers.
                                   They truly understood our vision and
@@ -737,7 +1055,7 @@ function Development() {
                                 <div className="my-3 border"></div>
                                 <div className="seperator"></div>
                                 <p className="description heading5">
-                                  V-Accel went above and beyond to develop a
+                                  Axess went above and beyond to develop a
                                   complex enterprise software solution that met
                                   all our regulatory requirements and security
                                   needs. Their collaborative approach and
@@ -869,7 +1187,7 @@ function Development() {
                                 <div className="seperator"></div>
                                 <p className="description heading5">
                                   We were struggling with outdated software that
-                                  hindered our growth. V-Accel modernized our
+                                  hindered our growth. Axess modernized our
                                   entire system, boosting productivity and
                                   streamlining operations. The ROI has been
                                   incredible!{" "}
@@ -1000,7 +1318,7 @@ function Development() {
                                 <div className="seperator"></div>
                                 <p className="description heading5">
                                   "From bootstrapped startup to industry leader,
-                                  V-Accel propelled us forward with custom
+                                  Axess propelled us forward with custom
                                   software that empowers our team and delights
                                   our customers. Their team truly understood our
                                   vision and translated it into a seamless,
@@ -1132,7 +1450,7 @@ function Development() {
                                 <div className="my-3 border"></div>
                                 <div className="seperator"></div>
                                 <p className="description heading5">
-                                  "V-Accel went the extra mile to develop a
+                                  "Axess went the extra mile to develop a
                                   complex enterprise software solution that met
                                   all our regulatory requirements and security
                                   needs. Their collaborative approach and
