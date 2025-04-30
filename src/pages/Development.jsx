@@ -14,6 +14,7 @@ import Techsection from "../components/Techsection";
 import whychooseimg from "../assets/images/whychoose-img.png";
 import Profiledub from "../assets/images/testing/dub-img.png";
 import Price from "../components/Price";
+import Links from '../components/Links';
 
 function Development() {
 
@@ -1529,6 +1530,7 @@ function Development() {
       </div>
 
       <Footer />
+      <Links/>
     </div>
   );
 }

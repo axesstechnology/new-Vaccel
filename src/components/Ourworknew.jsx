@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { OurWorksData } from "../store/OurWorksData";
 import Carousel from "./Carousel";
 import { Dropdown } from "react-bootstrap";
+import Links from "../components/Links";
 
 export default function Ourworknew() {
 
@@ -154,6 +155,7 @@ export default function Ourworknew() {
             </div>
             {/* <Carousel head={"Related Works"} /> */}
             <Footer />
+             <Links/>
         </div>
     );
 }

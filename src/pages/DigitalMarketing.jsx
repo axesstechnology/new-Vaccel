@@ -7,6 +7,7 @@ import Profiledub from '../assets/images/testing/dub-img.png'
 // import Digitalcontact from "../components/Digitalcontact";
 import Digitalcontact from "../components/Digitalcontact";
 import Price from "../components/Price";
+import Links from '../components/Links';
 // import axios from "axios";
 
 export default function DigitalMarketing() {
@@ -834,6 +835,7 @@ export default function DigitalMarketing() {
           <Digitalcontact />
         </div>
         <Footer displayContact={true} />
+         <Links/>
       </div>
     </div>
   );

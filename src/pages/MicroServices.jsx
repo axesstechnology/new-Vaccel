@@ -23,6 +23,7 @@ import imagine1 from '../assets/images/imagine1.png'
 import Carousel from "../components/Carousel";
 import Profiledub from '../assets/images/testing/dub-img.png'
 import Price from "../components/Price";
+import Links from '../components/Links';
 
 
 const Microservices = () => {
@@ -770,6 +771,9 @@ const Microservices = () => {
       </div>
 
       <Footer />
+      <Links />
+      
+    
     </div>
   );
 }

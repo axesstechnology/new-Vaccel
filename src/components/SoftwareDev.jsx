@@ -2,6 +2,7 @@ import React from 'react'
 import bubble from '../assets/images/bubble.webp'
 import success from '../assets/images/success.png'
 import kvrprofile from '../assets/images/kvr profile.png'
+import '../components/Links.jsx'
 
 import Banner from './Banner'
 export default function SoftwareDev() {
@@ -210,6 +211,7 @@ export default function SoftwareDev() {
 
                 </div>
             </section>
+             <Links/>
         </div>
     )
 }

@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../assets/css/Login.scss';
+import Links from '../components/Links';
 
 function Login() {
   const Navigate = useNavigate();
@@ -100,6 +101,7 @@ function Login() {
           </div>
         </div>
       </div>
+       <Links/>
 
       <Footer />
     </div>

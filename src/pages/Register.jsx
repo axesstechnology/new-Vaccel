@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Links from '../components/Links';
 
 
 function Register() {
@@ -123,6 +124,7 @@ function Register() {
 					</div>
 				</div>
 			</div>
+			 <Links/>
 			<Footer />
 		</div>
 	)
