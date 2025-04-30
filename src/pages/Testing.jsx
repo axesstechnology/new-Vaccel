@@ -91,12 +91,12 @@ function Testing() {
    <div className='hero-banner hero-2 mt-5' data-aos='fade'>
        
         <div className='container text-center green-text'>
-           <p className="bg-img-2 mb-5 mx-auto" data-aos='fade-up' data-aos-duration='400'>SaaS Product Development</p>
+           <p className="bg-img-2 mb-3 mx-auto" data-aos='fade-up' data-aos-duration='400'>SaaS Product Development</p>
            <h1 className={`secondary-header mb-3 ${isContactPage?'mb-5 pb-5':''}`} data-aos='fade-up' data-aos-duration='600'>Shield Your Software: Bulletproof Testing for a Flawless User Experience</h1>
            <p className='mb-0 secondary-text mb-3' data-aos='fade-up' data-aos-duration='700'>Bugs be gone! Our comprehensive software testing services identify and eradicate defects before they impact your users. Deliver confidence and quality with every release.</p>
            
            {/* Technology Expertise Cards */}
-           <div className="row mt-5" data-aos='fade-up' data-aos-duration='800'>
+           <div className="row mt-5 mb-4" data-aos='fade-up' data-aos-duration='800'>
                <div className="d-flex flex-wrap justify-content-between">
                    {techCards.map((card, index) => (
                        <div 

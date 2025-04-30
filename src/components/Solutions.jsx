@@ -1,5 +1,5 @@
 import React from "react";
-import cardimg from "../assets/images/card img.webp";
+import cardimg from "../assets/images/card-img.png";
 
 export default function Solutions() {
   return (
