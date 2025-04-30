@@ -372,11 +372,11 @@ function Services() {
                 </div>
               </div> */}
             </div>
-            <div className="my-5 text-white softtest mb-5" id="softdev">
+            <div className="my-5 text-white mt-5 softtest mb-5" id="softdev">
               <div className="p-5">
                 <div className=" position-relative z-3">
                   <h1
-                    className="primary-header mb-4"
+                    className="primary-header mt-5 mb-4"
                     data-aos="fade-up"
                     data-aos-duration="600"
                     data-aos-anchor-placement="bottom-bottom"

@@ -97,7 +97,7 @@ function Testing() {
            <p className='mb-0 secondary-text mb-3' data-aos='fade-up' data-aos-duration='700'>Bugs be gone! Our comprehensive software testing services identify and eradicate defects before they impact your users. Deliver confidence and quality with every release.</p>
            
            {/* Technology Expertise Cards */}
-           <div className="row mt-5 mb-4" data-aos='fade-up' data-aos-duration='800'>
+           {/* <div className="row mt-5 mb-4" data-aos='fade-up' data-aos-duration='800'>
                <div className="d-flex flex-wrap justify-content-between">
                    {techCards.map((card, index) => (
                        <div 
@@ -119,7 +119,40 @@ function Testing() {
                        </div>
                    ))}
                </div>
-           </div>
+           </div> */}
+                             <div className="row mt-5 mb-4" data-aos="fade-up" data-aos-duration="800">
+  <div
+    className="d-flex flex-wrap justify-content-center"
+    style={{
+      gap: '16px',
+    }}
+  >
+    {techCards.map((card, index) => (
+      <div
+        key={index}
+        style={{
+          flex: '1 1 calc(12.5% - 16px)', // 8 per row on large
+          minWidth: '120px',             // Forces wrapping on smaller screens
+          maxWidth: '150px',
+          boxSizing: 'border-box',
+        }}
+        data-aos="fade-up"
+        data-aos-duration={600 + index * 50}
+        data-aos-easing="ease-in-back"
+      >
+        <div className="card boxshadow small-card text-center h-100">
+          <div className="py-3 secondary-text">
+            <p className="fw-bold">{card.title}</p>
+            {card.technologies.map((tech, i) => (
+              <p key={i} className="mb-1">{tech}</p>
+            ))}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
            
           
         </div>
