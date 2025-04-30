@@ -46,9 +46,17 @@ $globalshadow : rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
         background-color: $whatsappcolorhover;
     }
 
-    &.facebookcolor::before {
-        background-color: $facebookcolorhover;
+    &.phone::before {
+        background-color: 'wheat';
     }
+
+    &.mail::before {
+        background-color: 'wheat';
+    }
+
+    // &.facebookcolor::before {
+    //     background-color: $facebookcolorhover;
+    // }
 
     &.instagramcolor::before {
         background-color: $instagramcolorhover;
@@ -80,11 +88,22 @@ $globalshadow : rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
             animation: whatsapp-shadow 2s 0s infinite;
         }
 
-        &.facebook {
-            background: $facebookcolor;
-            // box-shadow: $facebookcolor 0px 22px 70px 4px;
-            animation: facebook-shadow 2s 0s infinite;
+        & .phone{
+            background:black ;
+            animation:phone-shadow 2s 0s infinite;
         }
+
+        & .mail{
+            background:white ;
+            animation:mail-shadow 2s 0s infinite;
+        }
+
+        // .facebook {
+        //     background: $facebookcolor;
+        //     // box-shadow: $facebookcolor 0px 22px 70px 4px;
+        //     animation: facebook-shadow 2s 0s infinite;
+        // }
+
 
         &.instagram {
             background: $instagramcolor;
@@ -181,3 +200,11 @@ $globalshadow : rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
         }
     }
 }
+
+.highlight-icon {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
