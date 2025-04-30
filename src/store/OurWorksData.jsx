@@ -19,7 +19,7 @@ export const OurWorksData = [
         WebsiteLink: "https://axesstravels.in/",
         siteId: "axesstravels_in_456def789ghi123abc",
         headText: "Seamless Travel Experiences",
-        headDescription: "Explore seamless travel experiences with Axes Travels."
+        headDescription: "Explore seamless travel experiences with Axess Travels."
     },
     {
         s_no: 3,

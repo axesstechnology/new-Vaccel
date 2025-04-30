@@ -12,8 +12,6 @@ function Navbar() {
   const [value, setValue] = useContext(userContext);
 
 
-  let navigation = useNavigate();
-
   const handleOutsideClick = (event) => {
     const navbar = document.getElementById('navbarSupportedContent');
     const isClickInsideNavbar = navbar.contains(event.target);
@@ -60,12 +58,12 @@ function Navbar() {
           <Link to={'https://www.instagram.com/axesstech/'} target='_blank'><i className="bi bi-instagram text-danger fs-6"></i></Link>
           <Link><i className="bi bi-whatsapp text-success fs-6"></i></Link>
         </div> */}
-         {/* <NavLink to='/' className='d-none d-lg-flex justify-content-center col-12 col-lg-4  order-1 order-lg-2'>
+        {/* <NavLink to='/' className='d-none d-lg-flex justify-content-center col-12 col-lg-4  order-1 order-lg-2'>
           <p> Axess</p>
          <img style={{ width: '50px',height: '110px' }} src={vlogo} alt="" /> 
           <p>Technology</p>
         </NavLink>  */}
-        
+
         {/* <NavLink 
   to='/' 
   className='d-none d-lg-flex align-items-center justify-content-center col-12 col-lg-4 order-1 order-lg-2'
@@ -91,24 +89,24 @@ function Navbar() {
   </div>
 </NavLink> */}
 
-<div className="container-fluid px-4">
-  <div className="row align-items-center">
-    {/* Logo at top left */}
-    <div className="col-6 col-lg-2 d-none d-lg-flex justify-content-start align-items-center">
-      <Link to='/' className="navbar-brand">
-        <img src={vlogo} alt="" style={{ width: '100px', height: '110px', objectFit: 'contain'}} />
-      </Link>
-  {/* <img 
+        <div className="container-fluid px-4">
+          <div className="row align-items-center">
+            {/* Logo at top left */}
+            <div className="col-6 col-lg-2 d-none d-lg-flex justify-content-start align-items-center">
+              <Link to='/' className="navbar-brand">
+                <img src={vlogo} alt="" style={{ width: '100px', height: '110px', objectFit: 'contain' }} />
+              </Link>
+              {/* <img 
     src={vlogo} 
     alt="Logo" 
     style={{ width: '100px', height: '110px', objectFit: 'contain' }} 
   /> */}
 
-</div>
+            </div>
 
-    {/* Centered heading */}
+            {/* Centered heading */}
 
-    {/* <div className="col-12 col-lg-8 d-none d-lg-flex justify-content-center">
+            {/* <div className="col-12 col-lg-8 d-none d-lg-flex justify-content-center">
   <div className="d-flex align-items-center">
     <p className="mb-0" style={{ fontSize: '48px', fontWeight: '700', whiteSpace: 'nowrap', letterSpacing: '4px', color: '#1f4051' }}>
       V<span style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}>-</span>Accel AI Dynamics
@@ -123,28 +121,13 @@ function Navbar() {
     <p className="fs-2 mb-0 ">We Accelerate AI Dynamics</p>
   </div>
 </div>
-
-
-
-
-   
-
-   {/* <div className="col-12 col-lg-8 d-flex justify-content-center">
-  <div className="d-flex align-items-center">
-    <p className="mb-0" style={{ fontSize: '48px', fontWeight: '700', whiteSpace: 'nowrap', letterSpacing: '4px', color: '#1f4051' }}>
-      V<span style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}>-</span>Accel AI Dynamics
-    </p>
-  </div>
-</div> */}
-
-
-    {/* Empty column for spacing/alignment on larger screens */}
-    <div className="col-lg-2 d-none d-lg-block"></div>
-  </div>
-</div>
+            {/* Empty column for spacing/alignment on larger screens */}
+            <div className="col-lg-2 d-none d-lg-block"></div>
+          </div>
+        </div>
 
         {/* <div className='order-3 order-lg-3'> */}
-          {/* <NavLink to={'/login'} className='gold-btn px-4'>
+        {/* <NavLink to={'/login'} className='gold-btn px-4'>
             <span className='d-block green-text-1'>Login</span>
           </NavLink> */}
         {/* </div> */}
@@ -158,7 +141,7 @@ function Navbar() {
               <Link to='/' className="navbar-brand col-1">
                 <img src={vlogo} alt="" />
               </Link>
-              <p className="secondary-text m-0 text-center" onClick={()=>navigation("/")}>V-Accel</p>
+              <p className="secondary-text m-0 text-center" onClick={() => navigation("/")}>V-Accel</p>
               <button
                 className={`navbar-toggler shadow-none border-0 hamburger hamburger--spring-r ${nav && 'is-active'}`}
                 type="button"
@@ -193,12 +176,14 @@ function Navbar() {
                     <div className='nav-item'>
                       <NavLink to={'/services'} activeclassname="active" className="nav-link navhover" aria-current="page" >All Services</NavLink>
                     </div>
-                    <div className='nav-item'>
+                   <div className='nav-item'>
                       <NavLink to={'/development'} activeclassname="active" className="nav-link navhover" aria-current="page" > Custom Software Development</NavLink>
                     </div>
-                    <div className='nav-item'>
+                    
+                     <div className='nav-item'>
                       <NavLink to={'/testing'} activeclassname="active" className="nav-link navhover" aria-current="page" >SaaS Product Development</NavLink>
-                    </div>
+                    </div> 
+                  
                     <div className='nav-item'>
                       <NavLink to={'/webdevelopment'} activeclassname="active" className="nav-link navhover" aria-current="page" >AI & ML Engineering</NavLink>
                     </div>
@@ -215,7 +200,7 @@ function Navbar() {
                     Our works
                   </NavLink>
                 </li>
-                
+
                 {/* <li className="nav-item position-relative">
                   <Link className="nav-link navhover" >
                     Pricing
