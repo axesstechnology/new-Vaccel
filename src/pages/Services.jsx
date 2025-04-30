@@ -872,7 +872,7 @@ Let go of the chaos. Let us harmonize your innovation.
             <div className="services-right-side d-flex h-100 mt-5 align-items-end flex-column position-relative">
               <button
                 data-aos="fade-left"
-                className="service-nav"
+                className="service-nav mt-5"
                 data-axess-target="softdev"
                 onClick={(e) => {
                   scrollTop("softdev", e);
