@@ -130,37 +130,38 @@ function Development() {
                 </div>
             </div> */}
             
-            <div className="row mt-5 mb-5" data-aos="fade-up" data-aos-duration="800">
-  <div 
-    className="d-flex flex-wrap justify-content-center" 
-    style={{ columnGap: '2%', rowGap: '30px' }} // spacing between cards
+            <div className="row mt-5 mb-4" data-aos="fade-up" data-aos-duration="800">
+  <div
+    className="d-flex flex-wrap justify-content-center"
+    style={{
+      gap: '16px',
+    }}
   >
     {techCards.map((card, index) => (
-      <React.Fragment key={index}>
-        <div 
-          style={{ width: '18%' }} // allows 5 cards in first row with gaps
-          data-aos="fade-up" 
-          data-aos-duration={600 + (index * 50)} 
-          data-aos-easing="ease-in-back"
-        >
-          <div className="card boxshadow small-card text-center h-100">
-            <div className="py-1 secondary-text">
-              <p className="fw-bold">{card.title}</p>
-              {card.technologies.map((tech, i) => (
-                <p key={i} className="mb-1">{tech}</p>
-              ))}
-            </div>
+      <div
+        key={index}
+        style={{
+          flex: '1 1 calc((100% - 8 * 16px) / 9)', // 9 per row with spacing
+          minWidth: '100px',
+          maxWidth: '140px',
+          boxSizing: 'border-box',
+        }}
+        data-aos="fade-up"
+        data-aos-duration={600 + index * 50}
+        data-aos-easing="ease-in-back"
+      >
+        <div className="card boxshadow small-card text-center h-100">
+          <div className="py-3 secondary-text">
+            <p className="fw-bold">{card.title}</p>
+            {card.technologies.map((tech, i) => (
+              <p key={i} className="mb-1">{tech}</p>
+            ))}
           </div>
         </div>
-
-        {/* Line break after 5th card */}
-        {index === 4 && <div className="w-100" />}
-      </React.Fragment>
+      </div>
     ))}
   </div>
-</div>
-
-          
+</div>    
         </div>
     </div>
 

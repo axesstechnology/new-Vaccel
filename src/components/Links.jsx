@@ -70,7 +70,7 @@ export default function Links() {
   }, []);
 
   return (
-    <div style={{ backgroundColor: 'white', color: 'black' }} className={`${scrollClass} links-container row align-items-center text-white ${hover}`}>
+    <div className={`${scrollClass} links-container row align-items-center text-white ${hover}`}>
       <div className="col-4">
         <a href='https://wa.me/+918754453361' target='_blank' className="d-flex justify-content-center text-decoration-none text-white"
           onMouseEnter={() => setcolorfunctoin('whatsappcolor')}
