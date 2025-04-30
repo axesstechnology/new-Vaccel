@@ -421,6 +421,7 @@ const Technologies = () => {
                                             </ul>
                                         </div>
                                     </div>
+
                                     <div className='col-6 col-md-4 col-lg-3'>
                                         <div className=' tech-tools'>
                                             <h6 className='text-center py-3'>DevOps</h6>

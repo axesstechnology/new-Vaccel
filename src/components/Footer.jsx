@@ -426,7 +426,7 @@ function Footer({ displayContact }) {
                                             <span className="check"></span>
                                             <span className="box"></span>
                                             {/* <p className='secondary-text'>Digital Marketing</p> */}
-                                            <p className='secondary-text'>MicroServices Architecture & Engineering</p>
+                                            <p className='secondary-text'>MicroServices Architecture</p>
                                         </label>
                                     </div>
                                 </div>
@@ -483,8 +483,6 @@ function Footer({ displayContact }) {
     </div>
   </div>
 </div>
-
-
                             </div>
                         </div>
                         <div className="mt-3 text-center mb-3" data-aos='zoom-out' data-aos-anchor-placement="bottom-bottom">
@@ -576,21 +574,21 @@ function Footer({ displayContact }) {
       <div className="col-6 col-md-4 d-flex flex-column pl-3 ps-md-5">
         <p className='gold-text-2 fw-bold mb-2'>V-Accel</p>
         <ul className='list-unstyled mb-0'>
-          <li><Link to="/about" className='text-white text-decoration-none footerhover'>About</Link></li>
-          <li><Link to="/services" className='text-white text-decoration-none footerhover'>Services</Link></li>
-          <li><Link to="/ourworks" className='text-white text-decoration-none footerhover'>Our Works</Link></li>
-          <li><Link to="/contact" className='text-white text-decoration-none footerhover'>Contact</Link></li>
+          <li className='mb-2'><Link to="/about" className='text-white text-decoration-none footerhover'>Our Team</Link></li>
+          <li className='mb-2'><Link to="/services" className='text-white text-decoration-none footerhover'>Services</Link></li>
+          <li className='mb-2'><Link to="/ourworks" className='text-white text-decoration-none footerhover'>Our Works</Link></li>
+          <li className='mb-2'><Link to="/contact" className='text-white text-decoration-none footerhover'>Contact</Link></li>
         </ul>
       </div>
       
       <div className="col-6 col-md-4 d-flex flex-column">
         <p className='gold-text-2 fw-bold mb-2'>Our Services</p>
         <ul className='list-unstyled mb-0'>
-          <li><Link to="/development" className='text-white text-decoration-none footerhover'>Custom Software Development</Link></li>
-          <li><Link to="/testing" className='text-white text-decoration-none footerhover'>SaaS Product Development</Link></li>
-          <li><Link to="/webdevelopment" className='text-white text-decoration-none footerhover'>AI & ML Engineering</Link></li>
-          <li><Link to="/digitalmarketing" className='text-white text-decoration-none footerhover'>DevOps & Cloud Engineering</Link></li>
-          <li><Link to="/micro-services" className='text-white text-decoration-none footerhover'>Microservices Architecture</Link></li>
+          <li className='mb-2'><Link to="/development" className='text-white text-decoration-none footerhover '>Custom Software Development</Link></li>
+          <li className='mb-2'><Link to="/testing" className='text-white text-decoration-none footerhover '>SaaS Product Development</Link></li>
+          <li className='mb-2'><Link to="/webdevelopment" className='text-white text-decoration-none footerhover '>AI & ML Engineering</Link></li>
+          <li className='mb-2'><Link to="/digitalmarketing" className='text-white text-decoration-none footerhover '>DevOps & Cloud Engineering</Link></li>
+          <li className='mb-2'><Link to="/micro-services" className='text-white text-decoration-none footerhover '>Microservices Architecture</Link></li>
         </ul>
       </div>
     </div>
@@ -605,12 +603,12 @@ function Footer({ displayContact }) {
   </div>
   
   {/* Copyright section with reduced padding */}
-  <div className="copyright-section border-top border-secondary mt-2">
+  <div className="copyright-section border-top border-secondary mt-2 mb-2">
     <div className="container py-2">
       <div className="row">
         <div className="col-12 text-center mb-5">
           <small>Copyright © All rights reserved 2025.V - Accel 
-            <a href="/privacy-policy" className="text-primary ms-1">Privacy Policy</a>
+            <a href="/privacypolicy" className="text-primary ms-1">Privacy Policy</a>
           </small>
         </div>
       </div>

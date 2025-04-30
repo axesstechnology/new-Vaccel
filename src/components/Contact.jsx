@@ -672,7 +672,7 @@ function Contact() {
                         <div className="col-6 col-md-4 d-flex flex-column pl-3 ps-md-5">
                             <p className='gold-text-2 fw-bold mb-2'>V-Accel</p>
                             <ul className='list-unstyled mb-0'>
-                                <li><Link to="/about" className='text-white text-decoration-none footerhover'>About</Link></li>
+                                <li><Link to="/about" className='text-white text-decoration-none footerhover'>Our Team</Link></li>
                                 <li><Link to="/services" className='text-white text-decoration-none footerhover'>Services</Link></li>
                                 <li><Link to="/ourworks" className='text-white text-decoration-none footerhover'>Our Works</Link></li>
                                 <li><Link to="/contact" className='text-white text-decoration-none footerhover'>Contact</Link></li>
@@ -697,36 +697,24 @@ function Contact() {
                             <span className='gold-text-2 fw-bold me-2'>Visit Us:</span>
                             <span className="text-white">Tidel Park, GF-04, No-4, Rajiv Gandhi Salai, Taramani, Chennai - 600113.</span>
                         </div>
-                    </div>
-                </div>
-              </div>
-              
-              {/* Copyright section with reduced padding */}
+                         {/* Copyright section with reduced padding */}
               <div className="copyright-section border-top border-secondary mt-2">
                 <div className="container py-2">
                   <div className="row">
                     <div className="col-12 text-center mb-5">
                       <small>Copyright © All rights reserved 2025.V - Accel 
-                        <a href="/privacy-policy" className="text-primary ms-1">Privacy Policy</a>
+                        <a href="/privacypolicy" className="text-primary ms-1">Privacy Policy</a>
                       </small>
-
-                {/* Copyright section with reduced padding */}
-                <div className="copyright-section border-top border-secondary mt-2">
-                    <div className="container py-2">
-                        <div className="row">
-                            <div className="col-12 text-center">
-                                <small>Copyright © All rights reserved 2025.V - Accel
-                                    <a href="/privacy-policy" className="text-primary ms-1">Privacy Policy</a>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
               </div>
             </div>     
              <Links/>                        
             </div>
             </div>
+                    </div>
+                </div>
+              </div>
+              
+             
         </div>
     );
 }
