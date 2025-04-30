@@ -699,6 +699,16 @@ function Contact() {
                         </div>
                     </div>
                 </div>
+              </div>
+              
+              {/* Copyright section with reduced padding */}
+              <div className="copyright-section border-top border-secondary mt-2">
+                <div className="container py-2">
+                  <div className="row">
+                    <div className="col-12 text-center mb-5">
+                      <small>Copyright © All rights reserved 2025.V - Accel 
+                        <a href="/privacy-policy" className="text-primary ms-1">Privacy Policy</a>
+                      </small>
 
                 {/* Copyright section with reduced padding */}
                 <div className="copyright-section border-top border-secondary mt-2">
@@ -712,6 +722,10 @@ function Contact() {
                         </div>
                     </div>
                 </div>
+              </div>
+            </div>     
+             <Links/>                        
+            </div>
             </div>
         </div>
     );
