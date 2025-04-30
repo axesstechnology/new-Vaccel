@@ -15,6 +15,7 @@ import Profiledub from '../assets/images/testing/dub-img.png'
 import Process from "../assets/images/STLC.png";
 import TestingTools from '../components/TestingTools';
 import Price from '../components/Price';
+import Links from '../components/Links';
 
 
 
@@ -1009,6 +1010,7 @@ function Testing() {
       </div>
 
       <Footer />
+       <Links/>
 
     </div>
   )

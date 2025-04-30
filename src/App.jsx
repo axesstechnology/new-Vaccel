@@ -16,7 +16,7 @@ function App() {
     <div>
       <Store>
         <Routing />
-        <Links/>
+        {/* <Links/> */}
       </Store>
       
     </div>

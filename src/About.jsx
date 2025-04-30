@@ -9,7 +9,8 @@ import whyus2 from '../src/assets/images/about/whyus2.png'
 import Footer from "./components/Footer";
 import { Link } from "react-router-dom";
 import md from "../src/assets/images/md/venkatesan-ceo.jpg";
-import yourNewImage from '../src/assets/images/for-about.png'
+import yourNewImage from '../src/assets/images/for-about.png';
+import Links from "./components/Links";
 
 function About() {
   return (
@@ -175,9 +176,7 @@ As a Full-Stack Software Engineer (MERN) and a QA Automation Specialist, he has 
       <div className="container mt-5">
         <div>
           <h5 className="secondary-header text-center py-5" data-aos="fade-up" data-aos-duration="1000">
-            Let's talk about your digital aspirations. Whether you're a budding
-            startup or a seasoned enterprise, V-Accel has the tools and vision to
-            help you soar.
+          At V-Accel, he’s not just a founder — he's the lead problem-solver, code architect, and mentor behind every successful delivery. 
           </h5>
         </div>
         <div className="row mt-3">
@@ -224,7 +223,9 @@ As a Full-Stack Software Engineer (MERN) and a QA Automation Specialist, he has 
         <div className="container" data-aos="fade-up" data-aos-duration="1000">
           <h3 className="secondary-header mx-auto text-center text-white mb-2">
             <q>
-            At V-Accel, he’s not just a founder — he's the lead problem-solver, code architect, and mentor behind every successful delivery.
+            Let's talk about your digital aspirations. Whether you're a budding
+            startup or a seasoned enterprise, V-Accel has the tools and vision to
+            help you soar.
             </q>
           </h3>
           <p className="col-md-8 fs-5 mx-auto text-center text-white mt-4">
@@ -250,7 +251,7 @@ As a Full-Stack Software Engineer (MERN) and a QA Automation Specialist, he has 
               </div>
             </div>
           </div> */}
-          <div className="col-md-6 py-2 text-center">
+          <div className="py-2 text-center">
             <p className="secondary-text text-white">
               Schedule a free consultation to discuss your unique needs.{" "}
             </p>
@@ -273,6 +274,7 @@ As a Full-Stack Software Engineer (MERN) and a QA Automation Specialist, he has 
 
       </section>
       <Footer />
+       <Links/>
     </div>
   );
 }

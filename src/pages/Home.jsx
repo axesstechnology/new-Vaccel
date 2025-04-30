@@ -14,6 +14,7 @@ import Carousel from '../components/Carousel';
 import Development from './Development';
 import bannerimg from '../assets/images/homeimg.png';
 import Awardimg from '../assets/images/Award-img1.png';
+import Links from '../components/Links';
 export default function Home() {
     let nav = useNavigate()
 
@@ -57,6 +58,7 @@ export default function Home() {
             <Techsection/>
             <Industries/>
             {/* <Carousel head={"Our Works"}/> */}
+             <Links/>
             <Footer/>
         
         </section>

@@ -9,6 +9,7 @@ import Toastify from 'toastify-js';
 import "toastify-js/src/toastify.css"
 import footer from '../assets/images/footer.svg'
 import { Link } from 'react-router-dom';
+import Links from '../components/Links';
 
 function Contact() {
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -703,7 +704,7 @@ function Contact() {
               <div className="copyright-section border-top border-secondary mt-2">
                 <div className="container py-2">
                   <div className="row">
-                    <div className="col-12 text-center">
+                    <div className="col-12 text-center mb-5">
                       <small>Copyright © All rights reserved 2025.V - Accel 
                         <a href="/privacy-policy" className="text-primary ms-1">Privacy Policy</a>
                       </small>
@@ -711,8 +712,10 @@ function Contact() {
                   </div>
                 </div>
               </div>
-            </div>                             
+            </div>     
+             <Links/>                        
             </div>
+            
     );
 }
 
