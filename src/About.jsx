@@ -23,7 +23,7 @@ function About() {
 <div className='hero-banner hero-2 mt-5 ' data-aos='fade'>
                  <div className='container text-center green-text'>
                      <p className="bg-img-2 mb-3 mx-auto" data-aos='fade-up' data-aos-duration='400'>Team</p>
-                     <h1 className={`secondary-header mb-5`} data-aos='fade-up' data-aos-duration='600'>Saas Buiders | AI Inovators | Cloud and Devops Experts</h1>
+                     <h1 className={`secondary-header mb-5`} data-aos='fade-up' data-aos-duration='600'>Saas Builders | AI Innovators | Cloud and DevOps Experts</h1>
                      {/* <p className='mb-0 secondary-text mb-3' data-aos='fade-up' data-aos-duration='700'>{h3}</p> */}
                          {/* <Link to={"/contact"} className='text-decoration-none'>
                              <button className='gold-btn green-btn m-5 mx-auto' data-aos='zoom-out' data-aos-duration='600'>s
@@ -86,18 +86,18 @@ function About() {
 
       <div className="container">
         <div className=" pt-3 row justify-content-end">
-          <div className="col-lg-8 order-2 order-lg-1">
+          <div className="col-lg-8 col-md-2 order-2 order-lg-1">
             <div className="p-3 mx-2" data-aos="fade-right" data-aos-duration="1000">
               <h1 className="mt-5 text-center bg-img-1 mx-auto">About the Founder & CEO</h1>
               
-              <div class="rounded-img d-lg-none">
+               {/* <div class="rounded-img d-lg-none col-md-6">
                 <img
                   src={
                     md
                   }
                   alt="Venkatesanj"
                 />
-              </div>
+              </div> 
               <p className="mt-3 ceo-content">
               Mr. Venkatesan J — Full-Stack Engineer | AI Specialist | Visionary Technologist
 With over 8+ years of hands-on experience in building high-performance applications and intelligent systems, Venkatesan leads V-Accel AI Dynamics with a unique blend of deep technical expertise and strategic vision.
@@ -105,7 +105,27 @@ Holding a B.E. in Mechanical Engineering, a PGDM in Operations & Supply Chain, a
 As a Full-Stack Software Engineer (MERN) and a QA Automation Specialist, he has architected, tested, and scaled SaaS platforms, microservices ecosystems, and AI-powered products across industries.
 
               </p>
-            </div>
+            </div> */}
+            <div className="row align-items-center">
+  <div className="col-12 col-md-6 d-lg-none text-center mb-3">
+    <img
+      src={md}
+      alt="Venkatesan J"
+      className="img-fluid rounded"
+      style={{ maxWidth: '100%', height: 'auto' }}
+    />
+  </div>
+
+  <div className="col-12">
+    <p className="mt-3 ceo-content text-justify" style={{ lineHeight: '1.6' }}>
+      <strong>Mr. Venkatesan J — Full-Stack Engineer | AI Specialist | Visionary Technologist</strong><br /><br />
+      With over 8+ years of hands-on experience in building high-performance applications and intelligent systems, Venkatesan leads V-Accel AI Dynamics with a unique blend of deep technical expertise and strategic vision.<br /><br />
+      Holding a B.E. in Mechanical Engineering, a PGDM in Operations & Supply Chain, a PG Diploma in AI/ML, and an M.E. in Artificial Intelligence & Data Science, he bridges the gap between engineering, enterprise, and emerging technologies.<br /><br />
+      As a Full-Stack Software Engineer (MERN) and a QA Automation Specialist, he has architected, tested, and scaled SaaS platforms, microservices ecosystems, and AI-powered products across industries.
+    </p>
+  </div>
+</div>
+</div>
           </div>
           <div className="col-lg-4 order-1 order-lg-2 d-none d-lg-block">
             <div className="aboutusimg position-relative" data-aos="fade-left" data-aos-duration="1000">
