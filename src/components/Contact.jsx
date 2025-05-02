@@ -354,7 +354,7 @@ function Contact() {
                                             <span className="check"></span>
                                             <span className="box"></span>
                                             {/* <p className='secondary-text'>Digital Marketing</p> */}
-                                            <p className='secondary-text'>MicroServices Architecture & Engineering</p>
+                                            <p className='secondary-text'>MicroServices Architecture</p>
                                         </label>
                                     </div>
                                 </div>
@@ -671,7 +671,7 @@ function Contact() {
                         <div className="col-6 col-md-4 d-flex flex-column pl-3 ps-md-5">
                             <p className='gold-text-2 fw-bold mb-2'>V-Accel</p>
                             <ul className='list-unstyled mb-0'>
-                                <li><Link to="/about" className='text-white text-decoration-none footerhover'>About</Link></li>
+                                <li><Link to="/about" className='text-white text-decoration-none footerhover'>Our Team</Link></li>
                                 <li><Link to="/services" className='text-white text-decoration-none footerhover'>Services</Link></li>
                                 <li><Link to="/ourworks" className='text-white text-decoration-none footerhover'>Our Works</Link></li>
                                 <li><Link to="/contact" className='text-white text-decoration-none footerhover'>Contact</Link></li>
@@ -685,22 +685,36 @@ function Contact() {
                                 <li><Link to="/testing" className='text-white text-decoration-none footerhover'>SaaS Product Development</Link></li>
                                 <li><Link to="/webdevelopment" className='text-white text-decoration-none footerhover'>AI & ML Engineering</Link></li>
                                 <li><Link to="/digitalmarketing" className='text-white text-decoration-none footerhover'>DevOps & Cloud Engineering</Link></li>
-                                <li><Link to="/micro-services" className='text-white text-decoration-none footerhover'>Microservices Architecture</Link></li>
+                                <li><Link to="/micro-services" className='text-white text-decoration-none footerhover'>Microservices Architecture & Engineering</Link></li>
                             </ul>
                         </div>
                     </div>
 
                     {/* Single-line Visit Us section with reduced top margin */}
-                    <div className="row mt-4">
+                    {/* <div className="row mt-4">
                         <div className="col-12 d-flex flex-wrap justify-content-center align-items-center text-center">
                             <span className='gold-text-2 fw-bold me-2'>Visit Us:</span>
                             <span className="text-white">Tidel Park, GF-04, No-4, Rajiv Gandhi Salai, Taramani, Chennai - 600113.</span>
                         </div>
-                    </div>
+                    </div> */}
+                    <div className="row mt-4">
+  <div className="col-12 d-flex flex-wrap justify-content-center align-items-center text-center">
+    <a
+      href="https://www.google.com/maps?q=Tidel+Park,+GF-04,+No-4,+Rajiv+Gandhi+Salai,+Taramani,+Chennai+-+600113"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-decoration-none d-flex flex-wrap justify-content-center align-items-center"
+    >
+      <span className='gold-text-2 fw-bold me-2'>Visit Us:</span>
+      <span className="text-white">Tidel Park, GF-04, No-4, Rajiv Gandhi Salai, Taramani, Chennai - 600113.</span>
+    </a>
+  </div>
+</div>
+
                 </div>
 
                 {/* Copyright section with reduced padding */}
-                <div className="copyright-section border-top border-secondary mt-2">
+                <div className="copyright-section border-top border-secondary mt-2 pb-5">
                     <div className="container py-2">
                         <div className="row">
                             <div className="col-12 text-center">
