@@ -52,7 +52,7 @@ function Navbar() {
   return (
     <div>
       {/* Upper Navigation */}
-      <div className='d-flex py-3 py-lg-0 justify-content-between bg-white justify-content-lg-around align-items-center upper-nav border-bottom container-fluid flex-wrap' data-aos='fade-down' data-aos-duration='500'>
+      <div className='d-flex py-0 py-lg-3 justify-content-between bg-white justify-content-lg-around align-items-center upper-nav border-bottom container-fluid flex-wrap' data-aos='fade-down' data-aos-duration='500'>
         {/* <div className='d-flex share order-2 order-lg-1 '>
           <Link to={'https://www.facebook.com/profile.php?id=61556380648787'} target='_blank'><i className="bi bi-facebook text-primary fs-6"></i></Link>
           <Link to={'https://www.instagram.com/axesstech/'} target='_blank'><i className="bi bi-instagram text-danger fs-6"></i></Link>
@@ -169,7 +169,7 @@ function Navbar() {
                 </li>
 
                 <li className="nav-item position-relative">
-                  <NavLink  className="nav-link navhover" to={'/services'} onClick={() => setValue(true)}>
+                  <NavLink to={'/services'} activeclassname="active" className="nav-link navhover" onClick={() => setValue(true)}>
                     Services
                   </NavLink>
                   <div className="drop">

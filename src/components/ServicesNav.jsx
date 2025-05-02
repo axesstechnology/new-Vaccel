@@ -54,7 +54,7 @@ function Navbar() {
   return (
     <div className='positon-relative sticky-top'>
       {/* Upper Navigation */}
-      <div className='d-flex py-3 py-lg-0 justify-content-between bg-white justify-content-lg-around align-items-center upper-nav border-bottom container-fluid flex-wrap' data-aos='fade-down' data-aos-duration='500'>
+      <div className='d-flex py-0 py-lg-3 justify-content-between bg-white justify-content-lg-around align-items-center upper-nav border-bottom container-fluid flex-wrap' data-aos='fade-down' data-aos-duration='500'>
         {/* <div className='d-flex share order-2 order-lg-1 '>
           <Link to={'https://www.facebook.com/profile.php?id=61556380648787'} target='_blank'><i className="bi bi-facebook text-primary fs-6"></i></Link>
           <Link to={'https://www.instagram.com/axesstech/'} target='_blank'><i className="bi bi-instagram text-danger fs-6"></i></Link>
@@ -115,15 +115,22 @@ function Navbar() {
     </p>
   </div>
 </div> */}
-<div className="col-lg-8 d-none d-lg-flex justify-content-center">
+{/* <div className="col-lg-8 d-none d-lg-flex justify-content-center">
   <div className="d-flex align-items-center">
     <p className="mb-0" style={{ fontSize: '48px', fontWeight: '700', whiteSpace: 'nowrap', letterSpacing: '4px', color: '#1f4051' }}>
       V<span style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}>-</span>Accel AI Dynamics
     </p>
   </div>
+</div> */}
+
+<div className="col-lg-8 d-none d-lg-flex justify-content-center">
+  <div className="d-flex flex-column align-items-center justify-content-center text-center">
+    <p style={{ fontSize: '52px', fontWeight: '900', whiteSpace: 'nowrap', letterSpacing: '4px', color: '#1f4051' }}>
+      V<span style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}>-</span>Accel
+    </p>
+    <p className="fs-2 mb-0 ">We Accelerate AI Dynamics</p>
+  </div>
 </div>
-
-
 
 
    
@@ -185,12 +192,19 @@ function Navbar() {
                 </li>
 
                 <li className="nav-item position-relative">
-                  <Link to="#" className="nav-link navhover">
+                  {/* <Link to="#" className="nav-link navhover">
                     Services
-                  </Link>
+                  </Link> */}
+                  <NavLink
+  to="/services"
+  className="nav-link navhover"
+  end // 👈 forces active only when path matches exactly '/services'
+>
+  Services
+</NavLink>
                   <div className="drop">
                     <div className='nav-item'>
-                      <NavLink to={'/services'} activeclassname="active" className="nav-link navhover" aria-current="page" >All Services</NavLink>
+                      <NavLink to={'/services'} activeclassname="active"  className="nav-link navhover" aria-current="page" >All Services</NavLink>
                     </div>
                     <div className='nav-item'>
                       <NavLink to={'/development'} activeclassname="active" className="nav-link navhover" aria-current="page" > Custom Software Development</NavLink>
