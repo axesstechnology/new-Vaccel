@@ -15,7 +15,7 @@ export const OurWorksData = [
         Category: "Travels",
         SiteName: "axesstravels",
         description: "Axess Travels - Your gateway to seamless travel experiences. We offer customized travel packages tailored to your needs. Enjoy hassle-free travel planning with us.",
-        imageaddress: "/images/ourworks/travels.png",
+        imageaddress: "/images/ourworks/TRAVELS.svg",
         WebsiteLink: "https://axesstravels.in/",
         siteId: "axesstravels_in_456def789ghi123abc",
         headText: "Seamless Travel Experiences",
