@@ -33,6 +33,7 @@ import Digitalcontact from './components/Digitalcontact';
 import Digitalcontact1 from './components/Digitalcontact1';
 import Ourworknew from './components/Ourworknew';
 import MicroServices from './pages/MicroServices'
+import Profile from './pages/profile/Profile';
 
 
 
@@ -46,6 +47,7 @@ function Routing() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     {user && <Route path="/" element={<Home />} />}
+                    <Route path='/profile' element={<Profile/>} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/" element={<Navigate replace to="/login" />} />
@@ -79,6 +81,8 @@ function Routing() {
                     <Route path='/Digitalcontact1' element={<Digitalcontact1/>} />
                     <Route path='/micro-services' element={<MicroServices/>} />
                 </Routes>
+
+
             </BrowserRouter>
         </div>
     )
