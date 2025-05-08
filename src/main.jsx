@@ -16,5 +16,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./assets/css/popup.scss"
+import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);
