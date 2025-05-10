@@ -4,7 +4,7 @@ import Home from '../pages/Home';
 import logo from '../assets/images/logo/logo.png';
 import '../assets/css/hamburgers/hamburgers.scss';
 import { userContext } from '../store/Store';
-import vlogo from '../assets/images/V Logo.png';
+import vlogo from '../assets/images/Group 14.svg';
 
 function Navbar() {
   const [fixed, setFixed] = useState(false);
@@ -116,9 +116,10 @@ function Navbar() {
 <div className="col-lg-8 d-none d-lg-flex justify-content-center">
   <div className="d-flex flex-column align-items-center justify-content-center text-center">
     <p style={{ fontSize: '52px', fontWeight: '900', whiteSpace: 'nowrap', letterSpacing: '4px', color: '#1f4051' }}>
-      V<span style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}>-</span>Accel
+      V<span style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}>-</span>Accel AI Dynamics
     </p>
-    <p className="fs-2 mb-0 ">We Accelerate AI Dynamics</p>
+    {/* <p className="fs-2 mb-0 ">We Accelerate AI Dynamics</p> */}
+    <p className='fs-2 mb-0'>Accelerating Your Success with AI</p>
   </div>
 </div>
             {/* Empty column for spacing/alignment on larger screens */}
