@@ -10,7 +10,8 @@ function Navbar() {
   const [fixed, setFixed] = useState(false);
   const [nav, setNav] = useState(false);
   const [value, setValue] = useContext(userContext);
-
+    let navigation = useNavigate();
+  
 
   const handleOutsideClick = (event) => {
     const navbar = document.getElementById('navbarSupportedContent');
